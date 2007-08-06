@@ -1,0 +1,11 @@
+#summary Changes between versions of BP
+
+The next version of BP is also listed here, since we write down the changes as we make them. This does not mean, however that that version is released. Take it as a preview, and with a grain of salt. :)
+
+===BP 0.4===
+
+  * `.amp` is now `.alt`, since it works great on other text (prepositions, to name one) as well.
+
+===BP 0.3===
+
+  * First to use a changelog. ;)
