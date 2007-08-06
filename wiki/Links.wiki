@@ -7,3 +7,16 @@ Please post new links that you've found (or even better, written) to our [http:/
 ===Tutorials===
 
   * [http://gamemakker.co.uk/2007/08/05/blueprint-a-css-framework/ "Blueprint: A CSS Framework"] by  [http://gamemakker.co.uk/ Darren Coxall]
+
+
+===Some mentions of BP===
+
+  * [http://daringfireball.net/linked/2007/august#sun-05-blueprint John Gruber]
+  * [http://ifacethoughts.net/2007/08/06/blueprint-a-css-framework/ Abhijit Nadgouda]
+  * [http://qualitypeoples.com/2007/08/blueprint/ Ed Fladung]
+  * [http://www.counterjumper.com/2007/08/06/blueprint-a-css-framework/ Counterjumper]
+
+===Links===
+
+  * [http://del.icio.us/search/?fr=del_icio_us&p=blueprint+css&type=all Del.icio.us]
+  * [http://digg.com/design/Blueprint_A_CSS_Framework Digg]
