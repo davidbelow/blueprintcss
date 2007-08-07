@@ -1,0 +1,20 @@
+#summary People who have helped out on BP.
+
+===Project owner===
+  * [http://bjorkoy.com Olav Bjørkøy]
+
+===Contributors===
+  * [http://kimjoar.net/ Kim Joar Bekkelund]
+  * [http://nickdominguez.com/ Nick Dominguez]
+
+===Based on work by===
+  * [http://jeffcroft.com Jeff Croft]
+  * [http://playgroundblues.com Nathan Borror]
+  * [http://mintchaos.com Christian Metts]
+  * [http://meyerweb.com/eric Eric Meyer]
+
+===Addition inspiration===
+  * [http://wilsonminer.com Wilson Miner]
+  * [http://code.google.com/p/typogrify The Typogrify Project]
+  * [http://twinhelix.com Angus Turnbull]
+  * [http://subtraction.com Khoi Vinh]
