@@ -3,9 +3,13 @@
 ===Project owner===
   * [http://bjorkoy.com Olav Bjørkøy]
 
-===Contributors===
+===Project members===
+
   * [http://kimjoar.net/ Kim Joar Bekkelund]
+
+===Other contributors===
   * [http://nickdominguez.com/ Nick Dominguez]
+  * Brad Micallef
 
 ===Based on work by===
   * [http://jeffcroft.com Jeff Croft]
