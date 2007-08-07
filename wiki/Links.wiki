@@ -22,3 +22,4 @@ Please post new links that you've found (or even better, written) to our [http:/
 
   * [http://del.icio.us/search/?fr=del_icio_us&p=blueprint+css&type=all Del.icio.us]
   * [http://digg.com/design/Blueprint_A_CSS_Framework Digg]
+  * [http://programming.reddit.com/info/2cjwk/comments Reddit]
