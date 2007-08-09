@@ -6,12 +6,14 @@ The next version of BP is also listed here, since we write down the changes as w
 
   * All font sizes and line-heights are now relative. That means that you only have to set your preferred font size at a single place, and everything adapts perfectly.
   * New IE stylesheet, loaded with conditional comments, for IE fixes.
+  * [http://www.markboulton.co.uk/journal/comments/incremental_leading/ Incremental leading], contributed by Mark Boulton
 
   * `.amp` is now `.alt`, since it works great on other text (prepositions, to name one) as well.
   * Added class `.push-0` to right-align an object.
 
   * FIX: <hr> now works correctly in IE6
   * FIX: IE6 3px bug mostly fixed 
+  * Lots of other, small fixes. :)
 
 ===BP 0.3===
 
