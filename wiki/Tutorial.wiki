@@ -16,7 +16,8 @@ The framework has a few files you should sift through. Most files are heavily co
 
   * *screen.css*: This is the main file of the framework. It imports other CSS files from the "lib" directory, and should be included on every page.
   * *print.css*: This file sets some default print rules, so that printed versions of your site looks better than they usually would.
-  * *lib/grid.css*: This file sets up the grid (it's true). It has a lot of classes you apply to divs to set up any sort of column-based grid. The file is heavily commented, so it's a good idea to read it thoroughly.
+
+  * *lib/grid.css*: This file sets up the grid (it's true). It has a lot of classes you apply to divs to set up any sort of column-based grid. 
   * *lib/typography.css*: This file sets some default typography. It also has a few methods for some really fancy stuff to do with your text, so be sure to check it out.
   * *lib/reset.css*: This file resets every default CSS value that browsers tend to set for you.
   * *lib/buttons.css*: A bundled package for creating great CSS/HTML buttons.
