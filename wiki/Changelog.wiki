@@ -4,16 +4,14 @@ The next version of BP is also listed here, since we write down the changes as w
 
 ===BP 0.4===
 
-  * All font sizes and line-heights are now relative. That means that you only have to set your preferred font size at a single place, and everything adapts perfectly.
-  * New IE stylesheet, loaded with conditional comments, for IE fixes.
-  * [http://www.markboulton.co.uk/journal/comments/incremental_leading/ Incremental leading], contributed by Mark Boulton
-
+  * All font sizes and vertical margins are now elastic, through the use of em units. Resizing works great in every tested browser.
+  * Comes with a new, compressed version of BP, which reduces the size of the core files by 60 percent.
+  * Support for incremental leading, contributed by Mark Boulton.
+  * Adds perfected CSS buttons, by Kevin Hale of Particletree fame.
   * `.amp` is now `.alt`, since it works great on other text (prepositions, to name one) as well.
   * Added class `.push-0` to right-align an object.
-
-  * FIX: <hr> now works correctly in IE6
-  * FIX: IE6 3px bug mostly fixed 
-  * Lots of other, small fixes. :)
+  * Fixes all known IE bugs.
+  * Loads of minor fixes and additions.
 
 ===BP 0.3===
 
