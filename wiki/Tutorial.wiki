@@ -24,6 +24,12 @@ The framework has a few files you should sift through. Most files are heavily co
 
 * *lib/reset.css*: This file resets every default CSS value that browsers tend to set for you.
 
+* *lib/buttons.css*: A bundled package for creating great CSS/HTML buttons.
+
+* *lib/compressed.css*: A compressed version, containing all of the lib/ files. Should be used on live projects. See screen.css for instructions.
+
+
+
 There are some images as well, that you can use as backgrounds to see the grid and/or baseline. See screen.css for details
 
 ===Using Blueprint===
