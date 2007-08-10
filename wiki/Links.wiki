@@ -10,6 +10,7 @@ Please post new links that you've found (or even better, written) in the comment
   * [http://www.leandrodonofrio.com/recursos/scripts/blueprint-un-framework-css-para-nuestros-desarrollos/ Tutorial in Spanish] by [http://www.leandrodonofrio.com Leandro Donofrio]
   * [http://www.subtraction.com/archives/2007/0807_the_framewor.php Interview] with [http://bjorkoy.com Olav] by Khoi Vinh
   * [http://www.markboulton.co.uk/journal/comments/blueprint_a_css_framework/ Article] by Mark Boulton
+  * [http://www2.jeffcroft.com/blog/2007/aug/09/myth-content-and-presentation-separation/ On the class names in BP] by Jeff Croft
 
 ===Some mentions of BP===
 
