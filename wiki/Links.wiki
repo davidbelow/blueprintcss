@@ -6,6 +6,7 @@ Please post new links that you've found (or even better, written) in the comment
 
 ===Tutorials & Articles===
 
+  * [Wired magazine's blog Compiler on Blueprint] by Scott Gilbertson
   * [http://gamemakker.co.uk/2007/08/05/blueprint-a-css-framework/ "Blueprint: A CSS Framework"] by  [http://gamemakker.co.uk/ Darren Coxall]
   * [http://www.leandrodonofrio.com/recursos/scripts/blueprint-un-framework-css-para-nuestros-desarrollos/ Tutorial in Spanish] by [http://www.leandrodonofrio.com Leandro Donofrio]
   * [http://www.subtraction.com/archives/2007/0807_the_framewor.php Interview] with [http://bjorkoy.com Olav] by Khoi Vinh
