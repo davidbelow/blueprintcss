@@ -1,4 +1,4 @@
-#summary Articles and tutorials on blueprint
+#summary Articles and tutorials on Blueprint
 
 I'm trying to put together a rudimentary collection of articles and tutorials on BP.
 
