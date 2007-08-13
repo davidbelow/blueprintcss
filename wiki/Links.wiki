@@ -1,4 +1,5 @@
 #summary Articles and tutorials on Blueprint
+#labels Featured
 
 I'm trying to put together a rudimentary collection of articles and tutorials on BP.
 
