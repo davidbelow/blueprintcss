@@ -17,6 +17,7 @@ Please post new links that you've found (or even better, written) in the comment
 ===Some mentions of BP===
 
   * [http://daringfireball.net/linked/2007/august#sun-05-blueprint John Gruber]
+  * [http://ajaxian.com/archives/blueprint-css-framework-typography-matters Ajaxian]
   * [http://www.smashingmagazine.com/2007/08/14/best-of-july-2007/ Smashing Magazine]
   * [http://ifacethoughts.net/2007/08/06/blueprint-a-css-framework/ Abhijit Nadgouda]
   * [http://qualitypeoples.com/2007/08/blueprint/ Ed Fladung]
