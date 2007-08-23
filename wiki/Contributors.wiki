@@ -8,6 +8,7 @@
 
   * [http://kimjoar.net/ Kim Joar Bekkelund]
   * [http://www.markboulton.co.uk/ Mark Boulton]
+  * [http://www.kematzy.com/ Kematzy] ([http://kematzy.com/blueprint-generator/ Blueprint CSS Grid Generator])
 
 ===Other contributors===
   * [http://michaelmontgomery.net/ Michael Montgomery]
