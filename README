@@ -1,0 +1,67 @@
+This README describes the structure for the Blueprint CSS SVN repository.
+
+Non-Blueprint Developers:  
+------------------------
+Grab your code from any of the /<directory>/TAGS/<tag_name> directories. This code is safe for use. 
+Code from all other directories should be considered "in development" and therefore potentially unstable/non-working.
+
+
+http://blueprintcss.googlecode.com/svn/
+  |
+  |-- blueprint [1]
+  |     |-- branches  [1a]
+  |     |-- tags [1b]
+  |     |     |-- bp_v0.4
+  |     |     |-- bp_v0.5
+  |     |     |-- < ... etc ... >
+  |     |-- trunk [1c]
+  |
+  |-- generator [2]
+  |     |-- branches [2a]
+  |     |-- tags [2b]
+  |     |     |-- bgg_v04
+  |     |     |-- bgg_v05
+  |     |     |-- < ... etc ... >
+  |     |-- trunk [2c]
+  |
+  |-- testsuite [3]
+  |     |-- branches [3a]
+  |     |-- tags [3b]
+  |     |     |-- bp_testsuite_v0.5
+  |     |     |-- < ... etc ... >
+  |     |-- trunk [3c]
+  |
+  |-- wiki [4]
+
+
+Extended Notes:
+--------------
+
+[1] This is the repository for all Blueprint CSS related files.
+
+  [1a] The /blueprint/branches/ directory will contain development branches of the core BP, should that be needed.
+
+  [1b] The /blueprint/tags directory contains the various release versions of BP. This is the location where NON-members/developers should checkout/export the current version from.
+
+  [1c]  The /blueprint/trunk/ directory will contain the latest NON-RELEASED development code. Use only if you are assisting in the development of Blueprint CSS.
+
+
+[2] This is the repository for all Blueprint CSS Grid Generator (BGG) related files. [http://kematzy.com/blueprint-generator/]
+
+  [1a] The /generator/branches/ directory will contain development branches of the BGG, should that be needed.
+
+  [1b] The /generator/tags directory contains the various release versions of BGG. This is the location where NON-members/developers should checkout/export the current version from.
+
+  [1c]  The /generator/trunk/ directory will contain the latest NON-RELEASED development code. Use only if you are assisting in the development of the BGG.
+
+
+[3] This is the repository for all Blueprint CSS TestSuite related files.
+
+  [3a] The /testsuite/branches/ directory will contain development branches of the TestSuite, should that be needed.
+
+  [3b] The /testsuite/tags directory contains the various release versions of TestSuite. This is the location where NON-members/developers should checkout/export the current version from.
+
+  [3c]  The /testsuite/trunk/ directory will contain the latest NON-RELEASED development code. Use only if you are assisting in the development of Blueprint CSS TestSuite.
+
+
+[4] GOOGLE ONLY USAGE::  DO NOT EDIT OR ALTER IN ANY WAY WITHOUT FULLY KNOWING WHAT YOU ARE DOING !! You have been WARNED! ;-)
