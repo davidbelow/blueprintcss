@@ -1,0 +1,100 @@
+/*.container { background: #fff url("blueprint/lib/img/baseline.png"); }*/
+
+/* Blueprint v0.4 => v0.5*/
+
+/* Use a .box to create a padded box inside a column. 
+   Sticking to the the baseline. */ 
+.box { 
+  padding: 1.5em; 
+  margin-bottom: 1.5em; 
+  background: #f0f0f0; 
+}
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clear { display: inline-block; }
+.clear:after, .container:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+* html .clear { height: 1%; }
+.clear { display: block; }
+
+/* Forms
+-------------------------------------------------------------- */
+
+label     { font-weight: bold; }
+textarea  { height: 216px; width: 300px; }
+
+/* END Blueprint v0.4 => v0.5 */
+
+
+/* quick hack code below */
+li { list-style-type: none;}
+ul.domtabs{
+  float: left;
+  width: 100%;
+  margin: 0;
+}
+ul.domtabs li{
+  float:left;
+  padding: 0 0.5em 0 0;
+}
+ul.domtabs a:link{
+  width: 12em;
+  padding: .6em 1em;
+  display: block;
+  background: #f0f0f0;
+  color:#333;
+  height:1em;
+  font-weight:bold;
+  text-decoration:none;
+}
+ul.domtabs a:hover{
+  background: #6969FA;
+}
+.dombox{
+  border: 1px dashed #eee;
+  padding: 0 5px 5px 5px;
+}
+textarea {
+  width: 98%;
+  border: 1px solid #999;
+  margin: 5px;
+}
+/* NB! I think this should be added to the default typography.css as well */
+tt{
+  font-family: monospace;
+}
+.nb{
+  color: #800040;
+}
+img.attn{
+  border: 1px dashed #999;
+  margin: 20px;
+  padding: 20px;
+}
+p.version{
+  text-align: right;
+}
+ol li {
+  list-style-type: decimal;
+}
+form input.txt {
+  width: 50px;
+}
+/* this bit of code generates a visual 'bug' in FF, 
+but renders fine in Safari.
+Go figure. Why ?? */
+span.btn_fit{
+  float: right;
+  margin-right: 10px;
+}
+span#total_width_output span{
+  color: red;
+}
