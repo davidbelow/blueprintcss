@@ -11,8 +11,8 @@ http://blueprintcss.googlecode.com/svn/
   |-- blueprint [1]
   |     |-- branches  [1a]
   |     |-- tags [1b]
-  |     |     |-- bp_v0.4
-  |     |     |-- bp_v0.5
+  |     |     |-- blueprint-0.4
+  |     |     |-- blueprint-0.5
   |     |     |-- < ... etc ... >
   |     |-- trunk [1c]
   |
