@@ -3,7 +3,7 @@
   ## Created by Matz [kematzy@gmail.com] 2007-08-20
   ## Released under the same licence as Blueprint CSS.
   ## Version:   v.04 (2007-08-28)
-  $version_str = 'v.04 (2007-08-28)'; # used by the script below
+  $version_str = 'v.04 (2007-08-29)'; # used by the script below
   $bp_version = '0.5'; # used in generated CSS code
   $bp_version_date = '2007-08-28';
   
