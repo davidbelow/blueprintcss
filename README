@@ -24,14 +24,7 @@ http://blueprintcss.googlecode.com/svn/
   |     |     |-- < ... etc ... >
   |     |-- trunk [2c]
   |
-  |-- testsuite [3]
-  |     |-- branches [3a]
-  |     |-- tags [3b]
-  |     |     |-- bp_testsuite_v0.5
-  |     |     |-- < ... etc ... >
-  |     |-- trunk [3c]
-  |
-  |-- wiki [4]
+  |-- wiki [3]
 
 
 Extended Notes:
@@ -55,13 +48,4 @@ Extended Notes:
   [1c]  The /generator/trunk/ directory will contain the latest NON-RELEASED development code. Use only if you are assisting in the development of the BGG.
 
 
-[3] This is the repository for all Blueprint CSS TestSuite related files.
-
-  [3a] The /testsuite/branches/ directory will contain development branches of the TestSuite, should that be needed.
-
-  [3b] The /testsuite/tags directory contains the various release versions of TestSuite. This is the location where NON-members/developers should checkout/export the current version from.
-
-  [3c]  The /testsuite/trunk/ directory will contain the latest NON-RELEASED development code. Use only if you are assisting in the development of Blueprint CSS TestSuite.
-
-
-[4] GOOGLE ONLY USAGE::  DO NOT EDIT OR ALTER IN ANY WAY WITHOUT FULLY KNOWING WHAT YOU ARE DOING !! You have been WARNED! ;-)
+[3] GOOGLE ONLY USAGE::  DO NOT EDIT OR ALTER IN ANY WAY WITHOUT FULLY KNOWING WHAT YOU ARE DOING !! You have been WARNED! ;-)
