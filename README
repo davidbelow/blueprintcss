@@ -41,11 +41,11 @@ Extended Notes:
 
 [2] This is the repository for all Blueprint CSS Grid Generator (BGG) related files. [http://kematzy.com/blueprint-generator/]
 
-  [1a] The /generator/branches/ directory will contain development branches of the BGG, should that be needed.
+  [2a] The /generator/branches/ directory will contain development branches of the BGG, should that be needed.
 
-  [1b] The /generator/tags directory contains the various release versions of BGG. This is the location where NON-members/developers should checkout/export the current version from.
+  [2b] The /generator/tags directory contains the various release versions of BGG. This is the location where NON-members/developers should checkout/export the current version from.
 
-  [1c]  The /generator/trunk/ directory will contain the latest NON-RELEASED development code. Use only if you are assisting in the development of the BGG.
+  [2c]  The /generator/trunk/ directory will contain the latest NON-RELEASED development code. Use only if you are assisting in the development of the BGG.
 
 
-[3] GOOGLE ONLY USAGE::  DO NOT EDIT OR ALTER IN ANY WAY WITHOUT FULLY KNOWING WHAT YOU ARE DOING !! You have been WARNED! ;-)
+[3] Containts the Google Code Wiki files. Do not edit. :)
