@@ -10,6 +10,7 @@
   * [http://www.markboulton.co.uk/ Mark Boulton]
   * [http://www.kematzy.com/ Kematzy] ([http://kematzy.com/blueprint-generator/ Blueprint CSS Grid Generator])
   * [http://ariejan.net/ Ariejan de Vroom] ([http://trac.ariejan.net/wiki/Blueprint Ruby on Rails plugin])
+  * [http://www.christianmontoya.com/ Christian Monotya]
 
 ===Other contributors===
   * [http://michaelmontgomery.net/ Michael Montgomery]
