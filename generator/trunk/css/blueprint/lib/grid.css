@@ -22,7 +22,7 @@
 -------------------------------------------------------------- */
 
 body { 
-  text-align: center; /* IE6 Fix */
+  text-align: center; /* IE5 Fix */
   margin:36px 0;
 }
 
