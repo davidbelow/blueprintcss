@@ -1,10 +1,12 @@
-This README describes the structure for the Blueprint CSS SVN repository.
+Blueprint SVN Readme (http://blueprintcss.googlecode.com/svn/)
+* This file describes the structure for the Blueprint CSS SVN repository.
+----------------------------------------------------------------
+
 
 Non-Blueprint Developers:  
-------------------------
+----------------------------------------------------------------
 Grab your code from any of the /<directory>/TAGS/<tag_name> directories. This code is safe for use. 
 Code from all other directories should be considered "in development" and therefore potentially unstable/non-working.
-
 
 http://blueprintcss.googlecode.com/svn/
   |
@@ -27,25 +29,42 @@ http://blueprintcss.googlecode.com/svn/
   |-- wiki [3]
 
 
-Extended Notes:
---------------
+Folders in the SVN
+----------------------------------------------------------------
 
 [1] This is the repository for all Blueprint CSS related files.
 
-  [1a] The /blueprint/branches/ directory will contain development branches of the core BP, should that be needed.
+    [1a] The /blueprint/branches/ directory will contain development 
+         branches of the core BP, should that be needed.
 
-  [1b] The /blueprint/tags directory contains the various release versions of BP. This is the location where NON-members/developers should checkout/export the current version from.
+    [1b] The /blueprint/tags directory contains the various release 
+         versions of BP. This is the location where NON-members/developers 
+         should checkout/export the current version from.
 
-  [1c]  The /blueprint/trunk/ directory will contain the latest NON-RELEASED development code. Use only if you are assisting in the development of Blueprint CSS.
+    [1c] The /blueprint/trunk/ directory will contain the latest 
+         NON-RELEASED development code. Use only if you are assisting in 
+        the development of Blueprint CSS.
 
+[2] This is the repository for all Blueprint CSS Grid Generator (BGG) 
+    related files. [http://kematzy.com/blueprint-generator/]
 
-[2] This is the repository for all Blueprint CSS Grid Generator (BGG) related files. [http://kematzy.com/blueprint-generator/]
+    [2a] The /generator/branches/ directory will contain development 
+         branches of the BGG, should that be needed.
 
-  [2a] The /generator/branches/ directory will contain development branches of the BGG, should that be needed.
+    [2b] The /generator/tags directory contains the various release 
+         versions of BGG. This is the location where NON-members/developers 
+         should checkout/export the current version from.
 
-  [2b] The /generator/tags directory contains the various release versions of BGG. This is the location where NON-members/developers should checkout/export the current version from.
-
-  [2c]  The /generator/trunk/ directory will contain the latest NON-RELEASED development code. Use only if you are assisting in the development of the BGG.
-
+    [2c] The /generator/trunk/ directory will contain the latest NON-RELEASED 
+         development code. Use only if you are assisting in the development 
+         of the BGG.
 
 [3] Containts the Google Code Wiki files. Do not edit. :)
+
+
+Questions?
+----------------------------------------------------------------
+
+If you have any questions, please ask the Blueprint mailing list:
+http://groups.google.com/group/blueprintcss
+
