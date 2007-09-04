@@ -2,8 +2,7 @@ Blueprint SVN Readme (http://blueprintcss.googlecode.com/svn/)
 * This file describes the structure for the Blueprint CSS SVN repository.
 ----------------------------------------------------------------
 
-
-Non-Blueprint Developers:  
+Folder structure
 ----------------------------------------------------------------
 Grab your code from any of the /<directory>/TAGS/<tag_name> directories. This code is safe for use. 
 Code from all other directories should be considered "in development" and therefore potentially unstable/non-working.
@@ -29,7 +28,7 @@ http://blueprintcss.googlecode.com/svn/
   |-- wiki [3]
 
 
-Folders in the SVN
+Description of each folder
 ----------------------------------------------------------------
 
 [1] This is the repository for all Blueprint CSS related files.
