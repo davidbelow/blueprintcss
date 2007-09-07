@@ -17,6 +17,7 @@ Please post new links that you've found (or even better, written) in the comment
 
 ===Some mentions of BP===
 
+  * [http://blog.wired.com/monkeybites/2007/09/new-generator-t.html Wired Compiler Blog #2]
   * [http://daringfireball.net/linked/2007/august#sun-05-blueprint John Gruber]
   * [http://ajaxian.com/archives/blueprint-css-framework-typography-matters Ajaxian]
   * [http://www.smashingmagazine.com/2007/08/14/best-of-july-2007/ Smashing Magazine]
