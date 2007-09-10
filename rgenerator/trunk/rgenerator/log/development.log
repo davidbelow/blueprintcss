@@ -304,3 +304,21 @@ Completed in 0.00178 (560 reqs/sec) | Rendering: 0.00067 (37%) | 200 OK [http://
   [4;35;1mSQL (0.277791)[0m   [0mCREATE TABLE schema_info (version integer)[0m
   [4;36;1mSQL (0.299331)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
   [4;35;1mSQL (0.298939)[0m   [0mUPDATE schema_info SET version = 1[0m
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 18:22:14) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"grid"}
+Rendering /rcss/grid.rcss
+Completed in 0.00905 (110 reqs/sec) | Rendering: 0.00793 (87%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 18:30:46) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"grid"}
+Rendering /rcss/grid.rcss
+Completed in 0.00909 (110 reqs/sec) | Rendering: 0.00796 (87%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 18:30:56) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test"}
+Rendering /rcss/test.rcss
+Completed in 0.00317 (315 reqs/sec) | Rendering: 0.00136 (42%) | 200 OK [http://0.0.0.0/rcss/test.css]
