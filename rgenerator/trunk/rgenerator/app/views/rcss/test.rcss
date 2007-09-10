@@ -1,3 +1,5 @@
 <%# Required test file.  DO NOT REMOVE! %>
 
 .Stylefile <%=@stylefile%>
+
+CssReset.container_width = <%= CssReset.container_width %>

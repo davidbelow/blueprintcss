@@ -25,11 +25,6 @@ class RcssController < ApplicationController
       # set caching because we have a good css file to ship
       #expires_in 4.hours
       
-      # for testing set some values here to make available to the view.
-      # later we would want to provide defaults for these, and
-      # allow the user to override using the generator UI.
-      @width = "950px"
-      
       render(:file => @stylefile, :use_full_path => true, :content_type => "text/css")
       
     else #no method/action specified

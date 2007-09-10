@@ -11,7 +11,7 @@
 
 # Usage : test by running something from rails root like:
 #
-# ./run_erb_template.rb app/views/rcss/grid.rcss
+# ./run_erb_template.rb app/views/rcss/test.rcss
 
 require "erb"
 
@@ -20,6 +20,20 @@ class QuickTemplate
    
    def initialize(file)
       @text = File.read(file)
+      
+      # CSS config is stored in config/css.yml
+      # Use variables stored here using something like this in your views (including .rcss templates):
+      # CssReset.support_email
+      css_config = "config/css.yml"
+      if File.exist?(css_config)
+        require 'ostruct'
+        require 'yaml'
+        config = OpenStruct.new(YAML.load_file(css_config))
+        self::class::const_set('CssReset', OpenStruct.new(config.send("reset")) )
+        self::class::const_set('CssGrid', OpenStruct.new(config.send("grid")) )
+        self::class::const_set('CssTypography', OpenStruct.new(config.send("typography")) )
+      end
+      
    end
    
    def exec
@@ -30,7 +44,7 @@ class QuickTemplate
      
      # this is just for testing.  Need to find a way to pull these in from config.
      # or override some reasonable defaults
-     @width = "950px"
+     #@width = "950px"
      
      result = template.result(binding)
    end

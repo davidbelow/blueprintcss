@@ -9,7 +9,7 @@
    * Christian Metts   [mintchaos.com]
    * Khoi Vinh         [subtraction.com]
    
-   By default, the grid is <%= @width %> wide, with 24 columns 
+   By default, the grid is <%= CssGrid.container_width %> wide, with 24 columns 
    spanning 30px, and a 10px margin between columns.
    
    If you need fewer or more columns, use this 
@@ -23,7 +23,7 @@
 
 /* A container should group all your columns. */
 .container {
-  width: <%= @width %>;
+  width: <%= CssGrid.container_width %>;
   margin: 0 auto;
 }
 

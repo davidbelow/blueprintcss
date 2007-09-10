@@ -322,3 +322,337 @@ Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 18:30:56) [GET]
   Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test"}
 Rendering /rcss/test.rcss
 Completed in 0.00317 (315 reqs/sec) | Rendering: 0.00136 (42%) | 200 OK [http://0.0.0.0/rcss/test.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:23:40) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "rcssfile"=>"test", "controller"=>"rcss"}
+Rendering /rcss/test.rcss
+Completed in 0.00221 (452 reqs/sec) | Rendering: 0.00108 (48%) | 200 OK [http://0.0.0.0/rcss/test.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:24:33) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "rcssfile"=>"test", "controller"=>"rcss"}
+Rendering /rcss/test.rcss
+Completed in 0.00210 (477 reqs/sec) | Rendering: 0.00105 (50%) | 200 OK [http://0.0.0.0/rcss/test.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:30:49) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "rcssfile"=>"test", "controller"=>"rcss"}
+Rendering /rcss/test.rcss
+
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::CSSgrid) on line #5 of app/views/rcss/test.rcss:
+2: 
+3: .Stylefile <%=@stylefile%>
+4: 
+5: container_width = <%= CSSgrid.container_width %>
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:263:in `load_missing_constant'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:452:in `const_missing'
+    #{RAILS_ROOT}/app/views//rcss/test.rcss:5:in `_run_rcss_47app47views47rcss47test46rcss'
+    vendor/rails/actionpack/lib/action_view/base.rb:326:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:326:in `compile_and_render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:301:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:260:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:806:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:738:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:256:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:50:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:50:in `render'
+    app/controllers/rcss_controller.rb:33:in `rcss'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1095:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:632:in `call_filter'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:83:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:430:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:430:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:114:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:330:in `process'
+    vendor/rails/railties/lib/dispatcher.rb:41:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:33:23) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test"}
+Rendering /rcss/test.rcss
+Completed in 0.00258 (387 reqs/sec) | Rendering: 0.00150 (58%) | 200 OK [http://0.0.0.0/rcss/test.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:35:11) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test"}
+Rendering /rcss/test.rcss
+Completed in 0.00229 (436 reqs/sec) | Rendering: 0.00120 (52%) | 200 OK [http://0.0.0.0/rcss/test.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:35:13) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test"}
+Rendering /rcss/test.rcss
+Completed in 0.00189 (530 reqs/sec) | Rendering: 0.00077 (40%) | 200 OK [http://0.0.0.0/rcss/test.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:35:34) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test"}
+Rendering /rcss/test.rcss
+Completed in 0.00214 (467 reqs/sec) | Rendering: 0.00103 (48%) | 200 OK [http://0.0.0.0/rcss/test.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:35:44) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test"}
+Rendering /rcss/test.rcss
+Completed in 0.00242 (413 reqs/sec) | Rendering: 0.00129 (53%) | 200 OK [http://0.0.0.0/rcss/test.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:35:56) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test"}
+Rendering /rcss/test.rcss
+Completed in 0.00198 (505 reqs/sec) | Rendering: 0.00090 (45%) | 200 OK [http://0.0.0.0/rcss/test.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:36:36) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test"}
+Rendering /rcss/test.rcss
+
+
+ActionView::TemplateError (#<OpenStruct> is not a class/module) on line #5 of app/views/rcss/test.rcss:
+2: 
+3: .Stylefile <%=@stylefile%>
+4: 
+5: container_width = <%= CSS::RESET.container_width %>
+    #{RAILS_ROOT}/app/views//rcss/test.rcss:5:in `_run_rcss_47app47views47rcss47test46rcss'
+    vendor/rails/actionpack/lib/action_view/base.rb:326:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:326:in `compile_and_render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:301:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:260:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:806:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:738:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:256:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:50:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:50:in `render'
+    app/controllers/rcss_controller.rb:33:in `rcss'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1095:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:632:in `call_filter'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:83:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:430:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:430:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:114:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:330:in `process'
+    vendor/rails/railties/lib/dispatcher.rb:41:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:38:58) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test"}
+Rendering /rcss/test.rcss
+Completed in 0.00227 (440 reqs/sec) | Rendering: 0.00111 (48%) | 200 OK [http://0.0.0.0/rcss/test.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:43:36) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test"}
+Rendering /rcss/test.rcss
+
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::CssReset) on line #5 of app/views/rcss/test.rcss:
+2: 
+3: .Stylefile <%=@stylefile%>
+4: 
+5: CssReset.container_width = <%= CssReset.container_width %>
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:263:in `load_missing_constant'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:452:in `const_missing'
+    #{RAILS_ROOT}/app/views//rcss/test.rcss:5:in `_run_rcss_47app47views47rcss47test46rcss'
+    vendor/rails/actionpack/lib/action_view/base.rb:326:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:326:in `compile_and_render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:301:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:260:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:806:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:738:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:256:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:50:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:50:in `render'
+    app/controllers/rcss_controller.rb:33:in `rcss'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1095:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:632:in `call_filter'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:83:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:430:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:430:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:114:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:330:in `process'
+    vendor/rails/railties/lib/dispatcher.rb:41:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:44:03) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test"}
+Rendering /rcss/test.rcss
+Completed in 0.00237 (422 reqs/sec) | Rendering: 0.00124 (52%) | 200 OK [http://0.0.0.0/rcss/test.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:56:32) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test"}
+Rendering /rcss/test.rcss
+Completed in 0.00218 (457 reqs/sec) | Rendering: 0.00105 (48%) | 200 OK [http://0.0.0.0/rcss/test.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:56:33) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test"}
+Rendering /rcss/test.rcss
+Completed in 0.00156 (642 reqs/sec) | Rendering: 0.00048 (30%) | 200 OK [http://0.0.0.0/rcss/test.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:56:39) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"grid"}
+Rendering /rcss/grid.rcss
+Completed in 0.00919 (108 reqs/sec) | Rendering: 0.00806 (87%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:56:44) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"grid"}
+Rendering /rcss/grid.rcss
+Completed in 0.00177 (566 reqs/sec) | Rendering: 0.00064 (35%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:56:46) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"grid"}
+Rendering /rcss/grid.rcss
+Completed in 0.00162 (618 reqs/sec) | Rendering: 0.00055 (33%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:56:48) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"grid"}
+Rendering /rcss/grid.rcss
+Completed in 0.00159 (630 reqs/sec) | Rendering: 0.00054 (33%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:58:19) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"grid"}
+Rendering /rcss/grid.rcss
+Completed in 0.00896 (111 reqs/sec) | Rendering: 0.00787 (87%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 21:58:22) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"grid"}
+Rendering /rcss/grid.rcss
+Completed in 0.00158 (632 reqs/sec) | Rendering: 0.00054 (34%) | 200 OK [http://0.0.0.0/rcss/grid.css]

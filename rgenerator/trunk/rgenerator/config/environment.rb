@@ -58,3 +58,18 @@ end
 # Mime::Type.register "application/x-mobile", :mobile
 
 # Include your application configuration below
+
+
+# CSS config is stored in config/css.yml
+# Use variables stored here using something like this in your views (including .rcss templates):
+# CssReset.support_email
+css_config = "#{RAILS_ROOT}/config/css.yml"
+if File.exist?(css_config)
+  require 'ostruct'
+  require 'yaml'
+  config = OpenStruct.new(YAML.load_file(css_config))
+  ::CssReset = OpenStruct.new(config.send("reset"))
+  ::CssGrid = OpenStruct.new(config.send("grid"))
+  ::CssTypography = OpenStruct.new(config.send("typography"))
+end
+
