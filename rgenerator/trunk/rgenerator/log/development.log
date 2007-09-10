@@ -1,0 +1,306 @@
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: schema_info: SELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000195)[0m   [0mSELECT name FROM sqlite_master WHERE type = 'table'[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: schema_info: SELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000183)[0m   [0mSELECT name FROM sqlite_master WHERE type = 'table'[0m
+
+
+Processing InfoController#properties (for 127.0.0.1 at 2007-09-09 16:00:00) [GET]
+  Session ID: b16ed92ab4d24bbf67d7443c8271301e
+  Parameters: {"action"=>"properties", "controller"=>"rails/info"}
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: schema_info: SELECT version FROM schema_info[0m
+Completed in 0.48919 (2 reqs/sec) | Rendering: 0.00133 (0%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/rails/info/properties]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-09 16:06:01) [GET]
+  Session ID: d8b4f4701de58dd58f4dcfcd95a7e694
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/rcss/grid.css" with {:method=>:get}):
+    .//vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    .//vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    .//vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    .//vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    .//vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 16:07:27) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "rcssfile"=>"grid", "controller"=>"rcss"}
+Rendering /rcss/grid.rcss
+Completed in 0.00192 (520 reqs/sec) | Rendering: 0.00089 (46%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 16:09:59) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "rcssfile"=>"grid", "controller"=>"rcss"}
+Rendering /rcss/grid.rcss
+Completed in 0.00198 (505 reqs/sec) | Rendering: 0.00087 (43%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: schema_info: SELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000176)[0m   [0mSELECT name FROM sqlite_master WHERE type = 'table'[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: schema_info: SELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000177)[0m   [0mSELECT name FROM sqlite_master WHERE type = 'table'[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: schema_info: SELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000176)[0m   [0mSELECT name FROM sqlite_master WHERE type = 'table'[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: schema_info: SELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000176)[0m   [0mSELECT name FROM sqlite_master WHERE type = 'table'[0m
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 16:20:08) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "rcssfile"=>"test", "controller"=>"rcss"}
+Rendering /rcss/test.rcss
+Completed in 0.00208 (480 reqs/sec) | Rendering: 0.00094 (44%) | 200 OK [http://0.0.0.0/rcss/test.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 16:36:52) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "rcssfile"=>"grid", "controller"=>"rcss"}
+Rendering /rcss/grid.rcss
+Completed in 0.00972 (102 reqs/sec) | Rendering: 0.00859 (88%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 16:51:59) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "rcssfile"=>"grid", "controller"=>"rcss"}
+Rendering /rcss/grid.rcss
+Completed in 0.01246 (80 reqs/sec) | Rendering: 0.01104 (88%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 17:38:46) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "rcssfile"=>"grid", "controller"=>"rcss"}
+Rendering /rcss/grid.rcss
+Completed in 0.00205 (488 reqs/sec) | Rendering: 0.00077 (37%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 17:40:11) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "rcssfile"=>"grid", "controller"=>"rcss"}
+Rendering /rcss/grid.rcss
+Completed in 0.00179 (560 reqs/sec) | Rendering: 0.00060 (33%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-09 17:41:08) [GET]
+  Session ID: d8b4f4701de58dd58f4dcfcd95a7e694
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/" with {:method=>:get}):
+    .//vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    .//vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    .//vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    .//vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    .//vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-09 17:43:12) [GET]
+  Session ID: d6a098948ec95557ad4a60479b629819
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/" with {:method=>:get}):
+    .//vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    .//vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    .//vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    .//vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    .//vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-09 17:43:18) [GET]
+  Session ID: d6a098948ec95557ad4a60479b629819
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/index" with {:method=>:get}):
+    .//vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    .//vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    .//vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    .//vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    .//vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+  [4;36;1mSQL (0.395307)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.276793)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.000427)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to AddSessions (1)
+  [4;36;1mSQL (0.262568)[0m   [0;1mCREATE TABLE sessions ("id" INTEGER PRIMARY KEY NOT NULL, "session_id" varchar(255) DEFAULT NULL, "data" text DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.277433)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON sessions ("session_id")[0m
+  [4;36;1mSQL (0.300052)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON sessions ("updated_at")[0m
+  [4;35;1mSQL (0.275427)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000429)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000317)[0m   [0mSELECT name FROM sqlite_master WHERE type = 'table'[0m
+  [4;36;1mSQL (0.000271)[0m   [0;1mPRAGMA index_list(sessions)[0m
+  [4;35;1mSQL (0.000183)[0m   [0mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;36;1mSQL (0.000179)[0m   [0;1mPRAGMA index_info('index_sessions_on_session_id')[0m
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 17:48:59) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"grid"}
+Rendering /rcss/grid.rcss
+Completed in 0.00911 (109 reqs/sec) | Rendering: 0.00802 (88%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 17:56:47) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"grid"}
+Rendering /rcss/grid.rcss
+Completed in 0.00186 (537 reqs/sec) | Rendering: 0.00073 (39%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+
+
+Processing RcssController#rcss (for 127.0.0.1 at 2007-09-09 17:58:55) [GET]
+  Parameters: {"format"=>"css", "action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"grid"}
+Rendering /rcss/grid.rcss
+Completed in 0.00178 (560 reqs/sec) | Rendering: 0.00067 (37%) | 200 OK [http://0.0.0.0/rcss/grid.css]
+  [4;36;1mSQL (0.001082)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000421)[0m   [0mSELECT name FROM sqlite_master WHERE type = 'table'[0m
+  [4;36;1mSQL (0.000270)[0m   [0;1mPRAGMA index_list(sessions)[0m
+  [4;35;1mSQL (0.000182)[0m   [0mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;36;1mSQL (0.000185)[0m   [0;1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: sessions: DROP TABLE sessions[0m
+  [4;36;1mSQL (0.401264)[0m   [0;1mCREATE TABLE sessions ("id" INTEGER PRIMARY KEY NOT NULL, "session_id" varchar(255) DEFAULT NULL, "data" text DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.299212)[0m   [0mCREATE INDEX "index_sessions_on_updated_at" ON sessions ("updated_at")[0m
+  [4;36;1mSQL (0.277164)[0m   [0;1mCREATE INDEX "index_sessions_on_session_id" ON sessions ("session_id")[0m
+  [4;35;1mSQL (0.277708)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.299417)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.298924)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.378868)[0m   [0;1mDELETE FROM sessions[0m
+  [4;36;1mSQL (0.000563)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000432)[0m   [0mSELECT name FROM sqlite_master WHERE type = 'table'[0m
+  [4;36;1mSQL (0.000288)[0m   [0;1mPRAGMA index_list(sessions)[0m
+  [4;35;1mSQL (0.000183)[0m   [0mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;36;1mSQL (0.000196)[0m   [0;1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: sessions: DROP TABLE sessions[0m
+  [4;36;1mSQL (0.359753)[0m   [0;1mCREATE TABLE sessions ("id" INTEGER PRIMARY KEY NOT NULL, "session_id" varchar(255) DEFAULT NULL, "data" text DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.343297)[0m   [0mCREATE INDEX "index_sessions_on_updated_at" ON sessions ("updated_at")[0m
+  [4;36;1mSQL (0.277207)[0m   [0;1mCREATE INDEX "index_sessions_on_session_id" ON sessions ("session_id")[0m
+  [4;35;1mSQL (0.277791)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.299331)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.298939)[0m   [0mUPDATE schema_info SET version = 1[0m

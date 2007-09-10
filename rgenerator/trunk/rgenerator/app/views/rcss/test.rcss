@@ -1,0 +1,3 @@
+<%# Required test file.  DO NOT REMOVE! %>
+
+.Stylefile <%=@stylefile%>

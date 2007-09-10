@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Blueprint CSS Test Rails Generator</title>
+	
+</head>
+
+<body>
+
+<h2>Blueprint CSS Test Rails Generator</h2>
+<p>Try one of the links below to see some sample output.  This is just a proof of concept at this point, but the files are being dynamically generated from a template.  Only one variable is being substituted in which is "width".  See the files in {RAILS_ROOT}/app/views/rcss/*.rcss to see the template.  These templates are what we would actually maintain going forward if we take this approach.  The values to fill in these templates would be stored in YAML config files.  As you can see, modifying the template files is really no harder than modifying the standard static file even if you are non-technical.</p>
+
+<a href="/rcss/test.css">test.css</a><br />
+<a href="/rcss/grid.css">grid.css</a><br />
+
+<br />
+
+<p>If you want to try viewing the output of the ERB template that creates the files above on the command line you can try one of these on the command line from rails root.  The idea would be to write a simple script that runs like this and pipes the generated output to the static files which we have been maintaining by hand up to this point.</p>
+
+<pre>
+	./run_erb_template.rb app/views/rcss/test.rcss
+	./run_erb_template.rb app/views/rcss/grid.rcss
+</pre>
+
+</body>
+</html>

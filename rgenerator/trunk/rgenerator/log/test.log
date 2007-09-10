@@ -1,0 +1,42 @@
+
+
+Processing RcssController#rcss (for 0.0.0.0 at 2007-09-09 16:13:04) [GET]
+  Session ID: 
+  Parameters: {"action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test.css"}
+Rendering /rcss/test.rcss
+Completed in 0.00196 (509 reqs/sec) | Rendering: 0.00083 (42%) | DB: 0.00000 (0%) | 200 OK [http://test.host/rcss/rcss?rcssfile=test.css]
+
+
+Processing RcssController#rcss (for 0.0.0.0 at 2007-09-09 16:16:42) [GET]
+  Session ID: 
+  Parameters: {"action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test.css"}
+Rendering /rcss/test.rcss
+Completed in 0.00203 (492 reqs/sec) | Rendering: 0.00088 (43%) | DB: 0.00000 (0%) | 200 OK [http://test.host/rcss/rcss?rcssfile=test.css]
+
+
+Processing RcssController#rcss (for 0.0.0.0 at 2007-09-09 16:18:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"rcss", "rcssfile"=>"test.css", "controller"=>"rcss"}
+Rendering /rcss/test.rcss
+Completed in 0.00267 (374 reqs/sec) | Rendering: 0.00090 (33%) | DB: 0.00000 (0%) | 200 OK [http://test.host/rcss/rcss?rcssfile=test.css]
+
+
+Processing RcssController#rcss (for 0.0.0.0 at 2007-09-09 16:18:16) [GET]
+  Session ID: 
+  Parameters: {"action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test.css"}
+Rendering /rcss/test.rcss
+Completed in 0.00207 (482 reqs/sec) | Rendering: 0.00086 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/rcss/rcss?rcssfile=test.css]
+
+
+Processing RcssController#rcss (for 0.0.0.0 at 2007-09-09 17:59:44) [GET]
+  Session ID: 
+  Parameters: {"action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test.css"}
+Rendering /rcss/test.rcss
+Completed in 0.00209 (477 reqs/sec) | Rendering: 0.00092 (43%) | DB: 0.00000 (0%) | 200 OK [http://test.host/rcss/rcss?rcssfile=test.css]
+
+
+Processing RcssController#rcss (for 0.0.0.0 at 2007-09-09 18:00:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"rcss", "controller"=>"rcss", "rcssfile"=>"test.css"}
+Rendering /rcss/test.rcss
+Completed in 0.00193 (517 reqs/sec) | Rendering: 0.00083 (42%) | DB: 0.00000 (0%) | 200 OK [http://test.host/rcss/rcss?rcssfile=test.css]
