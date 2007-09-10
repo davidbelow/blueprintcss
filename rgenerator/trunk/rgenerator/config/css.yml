@@ -1,0 +1,42 @@
+
+# Custom CSS configuration
+
+# How to use?
+# From within a controller or view access variables using one
+# of the following styles:
+#
+#  In css.yml:
+#
+#  common: &common
+#    foo: "1px"
+#
+#   reset:
+#    <<: *common
+#    bar: "stuff"
+    
+#
+#  In a VIEW:
+# 
+#  <%= CssReset.foo %>
+#  <%= CssGrid.container_width %>
+
+########
+# NOTE : Webserver RESTART is required to see changes to this file!
+########
+
+common: &common
+  container_width: "950px"
+  
+
+reset:
+  <<: *common
+  
+
+grid:
+  <<: *common
+  num_columns: "24"
+  
+
+typography:
+  <<: *common
+  
