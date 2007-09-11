@@ -1,0 +1,2 @@
+module BlueprintGeneratorOneHelper
+end

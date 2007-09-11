@@ -1,0 +1,255 @@
+/*.container { background: #fff url("blueprint/lib/img/baseline.png"); }*/
+
+/* Blueprint v0.4 => v0.5*/
+
+/* Use a .box to create a padded box inside a column. 
+   Sticking to the the baseline. */ 
+/*
+.box { 
+  padding: 1.5em; 
+  margin-bottom: 1.5em; 
+  background: #f0f0f0; 
+}
+*/
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+/*
+.clear { display: inline-block; }
+.clear:after, .container:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+* html .clear { height: 1%; }
+.clear { display: block; }
+*/
+/* Forms
+-------------------------------------------------------------- */
+
+label     { font-weight: bold; }
+textarea  { height: 216px; width: 300px; }
+
+/* END Blueprint v0.4 => v0.5 */
+
+
+/* quick hack code below */
+li { list-style-type: none;}
+ul.domtabs{
+  float: left;
+  width: 100%;
+  margin: 0;
+}
+ul.domtabs li{
+  float:left;
+  padding: 0 0.5em 0 0;
+}
+ul.domtabs a:link{
+  width: 12em;
+  padding: .6em 1em;
+  display: block;
+  background: #f0f0f0;
+  color:#333;
+  height:1em;
+  font-weight:bold;
+  text-decoration:none;
+}
+ul.domtabs a:hover{
+  background: #6969FA;
+}
+.dombox{
+  border: 1px dashed #eee;
+  padding: 0 5px 5px 5px;
+}
+textarea {
+  width: 98%;
+  border: 1px solid #999;
+  margin: 5px;
+}
+/* NB! I think this should be added to the default typography.css as well */
+tt{
+  font-family: monospace;
+}
+.nb{
+  /*color: #800040;*/
+  padding: 2px 4px;
+  background-color: #FFFFA6;
+}
+.nb.large{
+  line-height: 1.8em;
+  background-color: #eef;
+}
+li span.nb{
+  background-color: #eef;
+}
+img.attn{
+  border: 1px dashed #999;
+  margin: 20px;
+  padding: 20px;
+}
+p.version{
+  text-align: right;
+}
+p {
+  padding-right: 10px;
+}
+
+form input.txt {
+  width: 50px;
+}
+form input.txt_color {
+  width: 70px;
+}
+
+/* this bit of code generates a visual 'bug' in FF, 
+but renders fine in Safari.
+Go figure. Why ?? */
+span.btn_fit{
+  float: right;
+  margin-right: 10px;
+}
+span#total_width_output span{
+  color: red;
+}
+
+/* Step boxes */
+.step p {
+  font-size: 150%;
+  font-weight: bold;
+  color: #ccc;
+}
+.step p span {
+  font-size: 750%;
+  font-weight: bold;
+  line-height: 50%;
+  color: #eee;
+  padding: 0 20px;
+/*  margin: 0;*/
+}
+.customize {
+  /*background-color: #eef;*/
+}
+.customize p {
+  font-size: 140%;
+  font-weight: bold;
+  color: #ccc;
+  text-align: center;
+  padding-top:2.5em;
+  padding-right: 5px;
+}
+.customize p a{
+  text-decoration: none;
+  color: #ccc;
+}
+.customize p a:hover{
+  color: #000;
+}
+p.mylink{
+  font-size: 140%;
+  font-weight: bold;
+  color: #ccc; 
+  text-align: center;
+}
+p.mylink a{
+  text-decoration: none;
+  color: #ccc;
+}
+p.mylink a:hover{
+  color: #000;
+}
+
+.dl-only{
+}
+.dl-only p {
+  font-size: 120%;
+  font-weight: bold;
+  color: #ccc;
+  text-align: center;
+  padding-top:2.5em;
+  padding-right: 5px;
+}
+.dl-only p span img {
+  margin: 1em 0 0 4.5em;
+}
+.dl-only p a{
+  text-decoration: none;
+  color: #ccc;
+}
+.dl-only p a:hover{
+  color: #000;
+}
+
+.box{
+  background-color: #eef;
+}
+ol > li { list-style: decimal; }
+ul li { list-style: square;}
+ul, ol      { margin: 1.5em 24px; }
+ul li, ol li{ padding-left: 16px;}
+
+.odd{
+  background-color: #F8F8F8;
+}
+.even{
+  background-color: #fff;
+}
+table{
+  margin: 5px;
+  width:99%;
+}
+.tr-category td h3 {
+  font-weight: normal;
+  padding: 0 10px;
+}
+.td-category{
+  /*font-weight: bold;*/
+  font-size: 130%;
+}
+.td-name{
+  font-weight: bold;
+}
+td{
+  padding: 5px;
+}
+h3{
+  font-weight: normal;
+}
+
+.action{
+  background-color: #eef;
+}
+
+#step-1,#step-2,#step-3,#step-5 {
+/*  border: .1em solid #ddd;*/
+  /* add a faux background here */
+  background-color: #eef;
+  margin-bottom: 0;
+}
+.pad {
+/*  border: .1em solid #ddd;*/
+}
+.pad p {
+/*  margin-bottom: 1.5em; */
+/*  background: #eee; */
+  padding: 1em 1em 0 1em;
+}
+.border-left {
+  padding-left: 4px;
+  margin-left: 5px;
+  border-left: 1px solid #ddd;
+}
+
+
+/* ALIGN:: */
+.al-r, .al-right, .align-right {
+  text-align: right;
+}
+.al-l, .al-left, .align-left {
+  text-align: left;
+}
+.al-c, .al-center, .align-center {
+  text-align: center;
+}

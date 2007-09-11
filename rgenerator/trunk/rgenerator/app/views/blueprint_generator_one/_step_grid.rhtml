@@ -1,0 +1,79 @@
+      <!-- step<%= step %> (grid.css) -->
+      <div class="column span-4 step">
+        <p>STEP<br><span><%= step %></span></p>
+      </div>
+      
+      <div class="column span-16 border">
+        <h2>GRID STRUCTURE:</h2>
+        <p>Short description of this section, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
+      </div>
+      
+      <div class="column span-4 last customize">
+        <p class="mylink"><a href="#" onclick="toggleStep('step-<%= step %>',this); return false;">CUSTOMIZE</a></p>
+      </div>
+      
+      <!-- div#step-1 -->
+      <div id="step-1" class="column span-24" style="display: none;">
+        
+        <form name="generator_grid" method="post" id="generator_grid" action="<%= CssGrid.form_action %>">
+          
+          <div class="column span-4">
+            <p>&nbsp;</p>
+          </div>
+          <div class="column span-6 append-1 border pad">
+            <p><label>Number of Columns:</label>
+              <br>
+              <input type="text" id="num_cols" name="generator[number_of_columns]" value="<%= CssGrid.number_of_columns %>" maxlength="3" onkeyup="fieldKeypress();" onblur="checkIntRange(this,2,999);" tabindex="1" class="txt" />
+              &nbsp;&nbsp;&nbsp;
+              <input type="button" value="-" id="btn_dec_columns" onclick="btnDecColumns();">
+              <input type="button" value="+" id="btn_inc_columns" onclick="btnIncColumns();">
+            
+              <span class="btn_fit"><input type="button" id="btn_fit_column_count" value="&laquo; Fit" onclick="btnFitColumnCount();"></span>
+              <br>
+            </p>
+            
+            <p><label>Column Width:</label>
+              <br>
+              <input type="text" id="column_width" name="generator[column_width]" value="<%= CssGrid.column_width %>" maxlength="3" onkeyup="fieldKeypress();" onblur="checkIntRange(this,10,200);" tabindex="2" class="txt" /> px
+              
+              <span class="btn_fit"><input type="button" id="btn_fit_column_width" value="&laquo; Fit" onclick="btnFitColumnWidth();"></span>
+              <br>
+            </p>
+            
+            <p><label>Margin Width:</label>
+              <br>
+              <input type="text" id="margin_width" name="generator[margin_width]" value="<%= CssGrid.margin_width %>" maxlength="2" onkeyup="fieldKeypress();" onblur="checkIntRange(this,5,99);" tabindex="3" class="txt" /> px
+              
+              <span class="btn_fit"><input type="button" id="btn_fit_margin_width" value="&laquo; Fit" onclick="btnFitMarginWidth();"></span>
+              <br>
+            </p>
+          </div>
+          <div class="column span-8 prepend-1 border pad">
+            <p><label>Desired Page Width:</label>
+              <br>
+              <input type="text" id="desired_page_width" name="generator[desired_page_width]" value="<%= CssGrid.container_width %>" maxlength="4" onkeyup="fieldKeypress();" onblur="checkIntRange(this,200,1800);" tabindex="4" class="txt" /> px
+            </p>
+            
+            <p><label>Total Page Width:</label>
+              <br>
+              <input type="hidden" name="total_page_width" id="total_page_width" value="" />
+              <span id="total_width_output">---</span>
+            </p>
+            
+            <hr>
+            <p>
+              <input type="button" value="Reset" onclick="btnResetForm();">
+              <!-- <span class="btn_fit"><input type="submit" id="submit" name="submit" value="Generate CSS" disabled="true" tabindex="5"></span> -->
+            </p>
+          </div>
+          <div class="column span-4 last dl-only">
+            <p><a href="#" onclick="">DOWNLOAD THIS FILE ONLY<br>&#x2193;</a>
+              <br>
+              <span id="grid_busy" style=""><img src="/images/spinner.gif" width="16" height="16" alt="Spinner"></span>
+            </p>
+          </div>
+        </form>
+      
+      </div>
+      <!-- /div#step<%= step %> -->
+      <!-- /step<%= step %> (grid.css) -->
