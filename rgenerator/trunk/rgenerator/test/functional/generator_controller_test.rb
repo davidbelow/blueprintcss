@@ -1,12 +1,12 @@
 require File.dirname(__FILE__) + '/../test_helper'
-require 'blueprint_generator_one_controller'
+require 'generator_controller'
 
 # Re-raise errors caught by the controller.
-class BlueprintGeneratorOneController; def rescue_action(e) raise e end; end
+class GeneratorController; def rescue_action(e) raise e end; end
 
-class BlueprintGeneratorOneControllerTest < Test::Unit::TestCase
+class GeneratorControllerTest < Test::Unit::TestCase
   def setup
-    @controller = BlueprintGeneratorOneController.new
+    @controller = GeneratorController.new
     @request    = ActionController::TestRequest.new
     @response   = ActionController::TestResponse.new
   end
