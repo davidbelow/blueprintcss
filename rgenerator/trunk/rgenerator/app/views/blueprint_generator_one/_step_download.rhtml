@@ -1,0 +1,38 @@
+      <%# TODO: Downloads section is just a mess, really needs to be worked out %>
+      <!-- div#step<%= step %> (download) -->
+      <div class="column span-4 step">
+        <p>STEP<br><span><%= step %></span></p>
+      </div>
+      <div class="column span-16 border">
+        <h2>DOWNLOAD:</h2>
+        <p><span class="nb">Not entirely sure what the best way to present this section. Download alternatives are:</span></p>
+          <ol>
+            <li>.zip download of all files</li>
+            <ul>
+              <li>un-compressed version</li>
+              <li>compressed version</li>
+            </ul>
+
+            <li>individual files for output (click on each file to download ?)</li>
+            <li>other method I can't think of right now</li>
+          </ol>
+      </div>      
+      <div class="column span-4 last customize">
+        <p><a href="#" onclick="new Effect.toggle($('step-<%= step %>'),'slide'); return false;">DOWNLOAD NOW<br>&#x2193;</a></p>
+      </div>
+      
+      <!-- /div#step-6 -- >
+      <div id="step-6" class="column span-20 prepend-4">
+        <div class="column span-20" style="background-color: #eef;">
+          
+          <div class="column span-9">
+            <p>Output options</p>
+          </div>
+          
+          <div class="column span-10 push-0 last">
+            <p>Output options</p>
+          </div>
+        </div>
+      </div>
+      <!-- /div#step-<%= step %> -->
+      <!-- /step<%= step %> (download) -->

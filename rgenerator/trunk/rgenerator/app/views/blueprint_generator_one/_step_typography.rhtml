@@ -1,0 +1,55 @@
+      <%# TODO: make the JS validations work, add more features and AJAX download stuff. %>
+      <!-- step<%= step %> (typography) -->
+      <div class="column span-4 step">
+        <p>STEP<br><span><%= step %></span></p>
+      </div>
+      <div class="column span-16 border">
+        <h2>TYPOGRAPHY:</h2>
+        <p>Short description of this section, Lorem ipsum dolor sit amet, consectetur adipisicing elit, laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
+      </div>
+      
+      <div class="column span-4 last customize">
+        <p class="mylink"><a href="#" onclick="toggleStep('step-<%= step %>',this); return false;">CUSTOMIZE</a></p>
+      </div>
+      
+      <!-- div#step-2 -->
+      <div id="step-2" class="column span-24" style="display:none;">
+        
+        <form name="generator_typography" method="post" id="generator_typography" action="<%= @form_action %>">
+          
+          <div class="column span-4">
+            <p>&nbsp;</p>
+          </div>
+          <div class="column span-4 append-1 border pad">
+            
+            <p><label>Baseline:</label>
+              <br>
+              <input type="text" id="baseline_height" name="generator[baseline_height]" value="<%= @baseline_height %>" maxlength="2" onkeyup="fieldKeypress();" onblur="checkIntRange(this,1,99);" tabindex="4" class="txt" /> px
+            </p>
+            
+            <p><label>Default Font Size:</label>
+              <br>
+              <input type="text" id="font_size" name="generator[font_size]" value="<%= @font_size %>" maxlength="3" onkeyup="fieldKeypress();" onblur="checkIntRange(this,1,999);" tabindex="4" class="txt" /> px
+            </p>
+          </div>
+          
+          <div class="column span-11 border pad">
+            <p><label>Default Font Family:</label>
+              <br>
+              <input type="text" id="default_font_family" name="generator[default_font_family]" value="<%= @default_font_family %>" size="40" maxlength="200" onkeyup="fieldKeypress();" onblur="" tabindex="4" />
+            </p>
+            
+            <!-- <p class="nb">What other parts should be here ??</p> -->
+          </div>
+          
+          <div class="column span-4 last dl-only">
+            <p><a href="#" onclick="">DOWNLOAD THIS FILE ONLY<br>&#x2193;</a>
+              <br>
+              <span id="typography_busy" style=""><img src="/images/spinner.gif" width="16" height="16" alt="Spinner"></span>
+            </p>
+          </div>
+          
+        </form>
+      </div>
+      <!-- /div#step-<%= step %> -->
+      <!-- /step<%= step %> (typography) -->

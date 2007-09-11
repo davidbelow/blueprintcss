@@ -1,0 +1,21 @@
+     <%# TODO: This is just an idea, but it should really be a layout GENERATOR instead, but I haven't yet worked out HOW to do that one. %>
+     <!-- step<%= step %> (Layouts) -->
+     <div class="column span-4 step">
+       <p>STEP<br><span><%= step %></span></p>
+     </div>
+     <div class="column span-16 border">
+       <h2>LAYOUT TEMPLATES:</h2>
+       <p>Short description of this section, <span class="nb">Providing a sample collection of BP HTML templates. ?? (Do we even want to go there?)</span></p>
+     </div>      
+     <div class="column span-4 last customize">
+       <p><a href="#" onclick="new Effect.toggle($('step-<%= step %>'),'slide'); return false;">CHOOSE</a></p>
+     </div>
+     
+     <!-- div#step-5 -->
+     <div id="step-5" class="column span-20 prepend-4" style="display:none;">
+        <div class="column span-20" style="background-color: #eef;">
+           <p><span class="nb">iTunes Music Store Home page kind of list of Cover Icons, with scrollable div.</span></p>
+        </div>
+     </div>
+     <!-- /div#step-<%= step %> -->
+     <!-- /step<%= step %> (Layouts) -->
