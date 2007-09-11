@@ -1,0 +1,18 @@
+NOTES.txt
+=====================
+
+2007-09-11: [kematzy]
+
+Added this file as a quick note pad to keep notes for us to ponder during development.
+
+= rgenerator & BlueprintCSS.com ?
+
+I was just thinking that rgenerator could become the actual BP site solution, ie, doing it all, 
+not just the generator bit:
+-- the home page could hold news about it all
+-- /generator/ gives you the generator in it's finished glory
+-- /docs/ gives you a wiki type of solution
+-- /source/ gives you access to the SVN via a Warehouse (http://warehouseapp.com/)
+-- /blog/  ??
+
+

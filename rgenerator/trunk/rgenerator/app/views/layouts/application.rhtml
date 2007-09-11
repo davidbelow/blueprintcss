@@ -19,29 +19,6 @@
         column_width: 30,
         margin_width: 10
       };
-      
-      function toggleStep(step,link){
-        new Effect.toggle($(step),'slide');
-        // change the name of the link
-        var showTxt = "CUSTOMIZE";
-        var closeTxt = showTxt + "<br>&uarr;";
-        (link.innerHTML == showTxt) ? link.update(closeTxt) : link.update(showTxt);
-      };
-      function toggleAllSteps(link){
-        new Effect.toggle($('step-1'),'slide'); 
-        new Effect.toggle($('step-2'),'slide'); 
-        new Effect.toggle($('step-3'),'slide'); 
-        new Effect.toggle($('step-4'),'slide'); 
-        new Effect.toggle($('step-5'),'slide');
-        // change the name of the link
-        var showTxt = "SHOW ALL OPTIONS";
-        var closeTxt = "HIDE ALL OPTIONS";
-        if(link.innerHTML == showTxt){
-          link.update(closeTxt);
-        }else{
-          link.update(showTxt);
-        }
-      };
     </script>
     
     <!--  <script src="/javascripts/bgg.js" type="text/javascript" charset="utf-8"></script> -->

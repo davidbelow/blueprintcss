@@ -53,3 +53,76 @@ class RcssController < ApplicationController
   end #rcss
   
 end
+
+
+## removed the PHP versions with my working Ruby versions. YES, I'm overly .to_i inside of them, but that was just because I wasn't entirely sure what values I would be getting in. The methods were taken from a CLI script.
+
+# ## METHODS:
+# # All methods sanitzes the input values as well, just to be extra safe ;-)
+# 
+# # calculates the column width based on the given page width, margin and number of columns:
+# # rounds the value off to the nearest full integer value i.e: 48.33333  => 48
+# def calculate_column_width(total_page_width,margin_width,number_of_columns)
+#   (((total_page_width.to_i + margin_width.to_i) / number_of_columns.to_i) - margin_width.to_i).to_i
+# end
+# # calculates the page width based on the given column width, margin and number of columns:
+# def calculate_page_width(column_width,margin_width,number_of_columns)
+#   (((column_width.to_i + margin_width.to_i) * number_of_columns.to_i) - margin_width.to_i).to_i
+# end
+# # generates the .span-N CSS code chunk.
+# def spans(number_of_columns,column_width,margin_width)
+#   out = "\n"
+#   1.upto(number_of_columns.to_i) do |n|
+#     pad = pad_output(number_of_columns,n) # always style the output :-)
+#     out += ".span-#{n} #{pad}{ width: #{(((column_width.to_i + margin_width.to_i) * n) - margin_width.to_i)}px;}\n"
+#   end
+#   out[-2,1] = " margin: 0; }\n"
+#   out
+# end
+# # generates the .append-N CSS code chunk.
+# def appends(number_of_columns,column_width,margin_width)
+#   out = "\n"
+#   1.upto(number_of_columns.to_i-1) do |n|
+#     pad = pad_output(number_of_columns,n) # always style the output :-)
+#     out += ".append-#{n} #{pad}{ padding-right: #{((column_width.to_i + margin_width.to_i) * n)}px;}\n"
+#   end
+#   out
+# end
+# # generates the .prepend-N CSS code chunk.
+# def prepends(number_of_columns,column_width,margin_width)
+#   out = "\n"
+#   1.upto(number_of_columns.to_i-1) do |n|
+#     pad = pad_output(number_of_columns,n) # always style the output :-)
+#     out += ".prepend-#{n} #{pad}{ padding-left: #{((column_width.to_i + margin_width.to_i) * n)}px;}\n"
+#   end
+#   out
+# end
+# # pads the output to line up the { } in the code
+# def pad_output(number_of_columns,n)
+#   case n
+#   when 1...10
+#     pad = (number_of_columns >=100) ? '  ' : ' '
+#   when 10...100
+#     pad = (number_of_columns >=100) ? ' ' : ''
+#   end
+# end
+# 
+# ## /METHODS:
+
+
+
+## TESTBED 
+
+# puts calculate_column_width(950, 10, 24)
+# puts calculate_column_width(950.56557, 10.3, 24.2)
+# 
+# puts calculate_page_width(30,10,24)
+# puts calculate_page_width(30.9,10.009999,24.3)
+# 
+# puts spans(24,30,10)
+# puts appends(24,30,10)
+# puts prepends(101,30,10)
+# 
+## /TESTBED
+
+# EOF=======
