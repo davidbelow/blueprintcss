@@ -55,12 +55,11 @@ typography:
 
 grid_png:
   <<: *common
-  
   # the background color of the image (hex value)
   background_color: '#FFFFF'
   
   # the colour of the grid part in the image (hex value)
-  grid_color:'#F3F5F7'
+  grid_color: '#F3F5F7'
   
   # the colour of the baseline (hex value)
   baseline_color: '#E6E6EC'
