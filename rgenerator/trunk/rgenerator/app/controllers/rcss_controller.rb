@@ -5,7 +5,7 @@ end
 
 class RcssController < ApplicationController
   
-  #layout nil
+  layout nil
   #session :off
   
   def index
@@ -44,7 +44,7 @@ class RcssController < ApplicationController
       end
       
       
-      render(:layout => nil, :file => @stylefile, :use_full_path => true, :content_type => "text/css")
+      render(:file => @stylefile, :use_full_path => true, :content_type => "text/css")
       
     else #no method/action specified
       render(:nothing => true, :status => 404)
