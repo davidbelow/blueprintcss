@@ -6,7 +6,8 @@
 
 <hr />
 
-<% %w{ grid typography grid_png plugins layouts download }.each_with_index do |part,key| %>
+<%# %w{ grid typography grid_png plugins layouts download }.each_with_index do |part,key| %>
+<% %w{ grid download }.each_with_index do |part,key| %>
 	<%= render :partial => "step_#{part}",:locals => { :step => key+1 } %>
 	<hr />
 <% end %>
