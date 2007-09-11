@@ -29,6 +29,9 @@ common: &common
   # common MUST always have at least one value set!  Do not remove! Bug?
   foo: "bar"
   
+  # the version of the generator
+  version_str: "v.05 (beta)"
+  
 reset:
   <<: *common
 
@@ -52,7 +55,17 @@ grid:
 
 typography:
   <<: *common
-
+  
+  # baseline height (Integer)
+  baseline_height: 18
+  
+  # default font size (Integer)
+  font_size: 12
+  
+  # default font family string
+  default_font_family: '"Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif'
+  
+  
 grid_png:
   <<: *common
   # the background color of the image (hex value)

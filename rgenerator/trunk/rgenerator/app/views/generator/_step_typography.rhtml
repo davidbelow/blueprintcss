@@ -24,19 +24,19 @@
             
             <p><label>Baseline:</label>
               <br>
-              <input type="text" id="baseline_height" name="generator[baseline_height]" value="<%= @baseline_height %>" maxlength="2" onkeyup="fieldKeypress();" onblur="checkIntRange(this,1,99);" tabindex="4" class="txt" /> px
+              <input type="text" id="baseline_height" name="generator[baseline_height]" value="<%= CssTypography.baseline_height %>" maxlength="2" onkeyup="fieldKeypress();" onblur="checkIntRange(this,1,99);" tabindex="4" class="txt" /> px
             </p>
             
             <p><label>Default Font Size:</label>
               <br>
-              <input type="text" id="font_size" name="generator[font_size]" value="<%= @font_size %>" maxlength="3" onkeyup="fieldKeypress();" onblur="checkIntRange(this,1,999);" tabindex="4" class="txt" /> px
+              <input type="text" id="font_size" name="generator[font_size]" value="<%= CssTypography.font_size %>" maxlength="3" onkeyup="fieldKeypress();" onblur="checkIntRange(this,1,999);" tabindex="4" class="txt" /> px
             </p>
           </div>
           
           <div class="column span-11 border pad">
             <p><label>Default Font Family:</label>
               <br>
-              <input type="text" id="default_font_family" name="generator[default_font_family]" value="<%= @default_font_family %>" size="40" maxlength="200" onkeyup="fieldKeypress();" onblur="" tabindex="4" />
+              <input type="text" id="default_font_family" name="generator[default_font_family]" value="<%= h CssTypography.default_font_family %>" size="40" maxlength="200" onkeyup="fieldKeypress();" onblur="" tabindex="4" />
             </p>
             
             <!-- <p class="nb">What other parts should be here ??</p> -->
