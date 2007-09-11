@@ -73,4 +73,3 @@ if File.exist?(css_config)
   ::CssTypography = OpenStruct.new(config.send("typography"))
   ::CssGridPng = OpenStruct.new(config.send("grid_png"))
 end
-

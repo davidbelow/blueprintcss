@@ -1,29 +1,28 @@
 /* -------------------------------------------------------------- 
    
    grid.css
-   * Sets up an easy-to-use grid of 24 columns.
+   --
+   * Sets up an easy-to-use grid
    
-   Based on work by:
-   * Nathan Borror     [playgroundblues.com]
-   * Jeff Croft        [jeffcroft.com]
-   * Christian Metts   [mintchaos.com]
-   * Khoi Vinh         [subtraction.com]
+   Default Values:
+   --
+   Page width :     <%= CssGrid.page_width %>px
+   Column width :   <%= CssGrid.column_width %>px
+   Margin width :   <%= CssGrid.margin_width %>px
+   Number columns : <%= CssGrid.number_of_columns %>
    
-   By default, the grid is <%= CssGrid.container_width %> wide, with 24 columns 
-   spanning <%= CssGrid.column_width %>px, and a <%= CssGrid.margin_width %>px margin between columns.
-   
-   If you need fewer or more columns, use this 
-   formula to find the new total width: 
-   Total width = (columns * <%= CssGrid.column_width %>) - <%= CssGrid.margin_width %>
-   
-   Read more about using a grid here:
-   * subtraction.com/archives/2007/0318_oh_yeeaahh.php
+   Generated Values:
+   --
+   Page width :     <%= @page_width %>px
+   Column width :   <%= @column_width %>px
+   Margin width :   <%= @margin_width %>px
+   Number columns : <%= @number_of_columns %>
    
 -------------------------------------------------------------- */
 
 /* A container should group all your columns. */
 .container {
-  width: <%= CssGrid.container_width %>;
+  width: <%= @page_width %>px;
   margin: 0 auto;
 }
 

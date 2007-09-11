@@ -2,4 +2,9 @@
 
 .Stylefile <%=@stylefile%>
 
-CssReset.container_width = <%= CssReset.container_width %>
+CssReset.page_width = <%= CssReset.page_width %>
+
+calc_column_width = <%= @column_width %>
+
+<%= @foo %>
+

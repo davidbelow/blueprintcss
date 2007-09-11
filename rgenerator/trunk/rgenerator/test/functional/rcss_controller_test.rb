@@ -37,3 +37,36 @@ class RcssControllerTest < Test::Unit::TestCase
   end
   
 end
+
+# test spec tests
+context "The RCSS controller (in general)" do
+  
+  setup do
+    # nothing to do here
+  end
+  
+  specify "should retrieve proper default values from css.yml" do
+    CssGrid.column_width.should.equal 30
+    CssGrid.margin_width.should.equal 10
+    CssGrid.number_of_columns.should.equal 24
+    CssGrid.page_width.should.equal 950
+  end
+  
+  specify "should be able to calculate the proper default column width passing NO parameters" do
+    Grid.calc_column_width.should.equal 30
+  end
+  
+  specify "should be able to calculate the proper column width passing in parameters" do
+    # 300, 5, 10 calculates to 25.5 which should be rounded to 25
+    Grid.calc_column_width(300, 5, 10).should.equal 25
+  end
+  
+  specify "should be able to calculate the proper default page width passing no parameters" do
+    Grid.calc_page_width.should.equal 950
+  end
+
+  specify "should be able to calculate the proper page width passing in parameters" do
+    Grid.calc_page_width(30, 10, 24).should.equal 950
+  end
+  
+end
