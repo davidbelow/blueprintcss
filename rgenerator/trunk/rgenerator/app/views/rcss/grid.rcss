@@ -10,11 +10,11 @@
    * Khoi Vinh         [subtraction.com]
    
    By default, the grid is <%= CssGrid.container_width %> wide, with 24 columns 
-   spanning 30px, and a 10px margin between columns.
+   spanning <%= CssGrid.column_width %>px, and a <%= CssGrid.margin_width %>px margin between columns.
    
    If you need fewer or more columns, use this 
    formula to find the new total width: 
-   Total width = (columns * 30) - 10
+   Total width = (columns * <%= CssGrid.column_width %>) - <%= CssGrid.margin_width %>
    
    Read more about using a grid here:
    * subtraction.com/archives/2007/0318_oh_yeeaahh.php

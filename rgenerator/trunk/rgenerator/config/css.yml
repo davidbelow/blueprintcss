@@ -34,9 +34,16 @@ reset:
 
 grid:
   <<: *common
-  num_columns: "24"
+  number_of_columns: "24"
+  column_width: "20"
+  margin_width: '10'
+  page_width: '950'
+  form_action: '/generate/grid'
   
 
 typography:
+  <<: *common
+
+grid_png:
   <<: *common
   

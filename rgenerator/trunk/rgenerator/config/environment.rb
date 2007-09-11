@@ -71,5 +71,6 @@ if File.exist?(css_config)
   ::CssReset = OpenStruct.new(config.send("reset"))
   ::CssGrid = OpenStruct.new(config.send("grid"))
   ::CssTypography = OpenStruct.new(config.send("typography"))
+  ::CssGridPng = OpenStruct.new(config.send("grid_png"))
 end
 
