@@ -1,42 +1,12 @@
-      <!-- div#intro -->
-      <div class="column span-24">
-        <div class="column span-12">
-          <h2>INTRODUCTION:</h2>
-          
-          <p>This tool will help you generate customised versions of <a href="http://code.google.com/p/blueprintcss/">Blueprint's</a> core files to suit your own specific development needs.</p>
-          
-          <p class="nb large al-c"><strong>Please Note!</strong> Each of the steps below has its own <strong>download this file only</strong> button, if you don't need the whole package.</p>
-        </div>
-        
-        <div class="column span-10 push-0 last">
-          
-          <h2>USAGE:</h2>
-          <ol>
-            <li>Follow the steps outlined below and customize as required by clicking on the customize button for each step.</li>
-            <li>Choose one (or more) layout templates by clicking on the <strong>Choose</strong> button.</li>
-            <li>Select your download options, and click the <strong>Download Now</strong> button.</li>
-          </ol>
-          
-          <!-- <p class="nb">NEEDS FURTHER REVISION ?</p> -->
-        </div>
-        
-      </div>
-      <!-- /div#intro -->
-      
-      <hr>
-      
-      <div class="column span-24">
-        <p class="al-r mylink"><a href="#" onclick="toggleAllSteps(this);return false;">SHOW ALL OPTIONS</a></p>
-      </div>
-      
-      <hr>
-      
-      <% %w{ grid typography grid_png plugins layouts download }.each_with_index do |part,key| %>
-        
-        <%= render :partial => "step_#{part}",:locals => { :step => key+1 } %>
-        
-        <hr>
-        
-      <% end %>
-      
-      
+<%= render :partial => "intro" %>
+
+<div class="column span-24">
+	<p class="al-r mylink"><a href="#" onclick="toggleAllSteps(this);return false;">SHOW ALL OPTIONS</a></p>
+</div>
+
+<hr />
+
+<% %w{ grid typography grid_png plugins layouts download }.each_with_index do |part,key| %>
+	<%= render :partial => "step_#{part}",:locals => { :step => key+1 } %>
+	<hr />
+<% end %>
