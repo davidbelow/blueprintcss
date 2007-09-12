@@ -9,7 +9,8 @@
 <div class="column span-8 prepend-3 last">
   <%# TODO: Fix these buttons. I like the design of them, but not the functionality nor the H4 aspect of them. %>
   <h4 id="grid_actions">
-      <a href="#" onclick="toggleCustomize('step_grid',this); return false;">CUSTOMIZE</a>
+      <%= link_to_remote "CUSTOMIZE", :url => {:action => 'set_grid_custom'} -%>
+      <!-- <a href="#" onclick="toggleCustomize('step_grid',this); return false;">CUSTOMIZE</a> -->
       &nbsp; | &nbsp;<%= link_to_remote "REMOVE", :url => {:action => 'set_grid_remove'} %>
       &nbsp; | &nbsp;<%= link_to_remote "DEFAULT", :url => {:action => 'set_grid_default'} -%>
   </h4>

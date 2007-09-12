@@ -24,7 +24,7 @@
     
       <p><label>Column Width:</label>
         <br>
-        <%= text_field_tag :grid_column_width, nil, :size=>3, :maxlength=>3, :value=>"#{CssGrid.column_width}", :class => 'txt', :tabindex => 2 %> px
+        <%= text_field_tag :column_width, nil, :size=>3, :maxlength=>3, :value=>"#{CssGrid.column_width}", :class => 'txt', :tabindex => 2 %> px
       
         <span class="btn_fit"><input type="button" id="btn_fit_column_width" value="&laquo; Fit" onclick="btnFitColumnWidth();"></span>
         <br>
@@ -33,14 +33,14 @@
     <div class="column span-6 append-1">
       <p><label>Margin Width:</label>
         <br>
-        <%= text_field_tag :grid_margin_width, nil, :size=>2, :maxlength=>2, :value=>"#{CssGrid.margin_width}", :class => 'txt', :tabindex => 3 %> px
+        <%= text_field_tag :margin_width, nil, :size=>2, :maxlength=>2, :value=>"#{CssGrid.margin_width}", :class => 'txt', :tabindex => 3 %> px
         <span class="btn_fit"><input type="button" id="btn_fit_margin_width" value="&laquo; Fit" onclick="btnFitMarginWidth();"></span>
         <br>
       </p>
 
       <p><label>Desired Page Width:</label>
         <br>
-        <%= text_field_tag :grid_page_width, nil, :size=>4, :maxlength=>4, :value=>"#{CssGrid.page_width}", :class => 'txt', :tabindex => 4 %> px
+        <%= text_field_tag :page_width, nil, :size=>4, :maxlength=>4, :value=>"#{CssGrid.page_width}", :class => 'txt', :tabindex => 4 %> px
       </p>
     </div>
     <div class="column span-8 prepend-1 last">

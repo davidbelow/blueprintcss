@@ -22,9 +22,9 @@ function toggleAllSteps(link){
 function btnResetGridForm(){
   // TODO: sort out this reset functionality in a DRY way.
   var g = default_settings['grid'];
-  $('grid_number_of_columns').value = g['number_of_columns'];
-  $('grid_column_width').value = g['column_width'];
-  $('grid_margin_width').value = g['margin_width'];
-  $('grid_page_width').value = g['desired_page_width'];
+  $('number_of_columns').value = g['number_of_columns'];
+  $('column_width').value = g['column_width'];
+  $('margin_width').value = g['margin_width'];
+  $('page_width').value = g['desired_page_width'];
   
 }
