@@ -11,7 +11,7 @@ class GeneratorController < ApplicationController
     session[:grid_margin_width] = nil
     
     render :update do |page|
-      page["grid_status"].replace_html "&nbsp;|&nbsp;" + "default"
+      page["grid_status"].replace_html "default"
       page["grid_status"].visual_effect(:highlight, :duration => 2)
       page["step_grid"].visual_effect(:fade)
     end
@@ -25,11 +25,12 @@ class GeneratorController < ApplicationController
     session[:grid_margin_width] = CssGrid.margin_width
     
     render :update do |page|
-      page["grid_status"].replace_html "&nbsp;|&nbsp;" + "custom"
+      page["grid_status"].replace_html "custom"
       page["grid_status"].visual_effect(:highlight, :duration => 2)
-      page["step_grid_form"].replace_html :partial => "step_grid_form"
-      page["step_grid"].visual_effect(:appear)
-      page["step_grid_form"].visual_effect(:highlight, :duration => 2)
+      page.visual_effect(:toggle_slide,"step_grid")
+      # page["step_grid_form"].replace_html :partial => "step_grid_form"
+     
+      # page["step_grid_form"].visual_effect(:highlight, :duration => 2)
     end
   end
   
@@ -41,7 +42,7 @@ class GeneratorController < ApplicationController
     session[:grid_margin_width] = nil
     
     render :update do |page|
-      page["grid_status"].replace_html "&nbsp;|&nbsp;" + "removed"
+      page["grid_status"].replace_html "removed"
       page["grid_status"].visual_effect(:highlight, :duration => 2)
       page["step_grid"].visual_effect(:fade)
     end

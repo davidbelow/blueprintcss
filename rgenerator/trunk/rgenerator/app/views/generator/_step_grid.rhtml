@@ -1,18 +1,17 @@
-<!-- /_step_grid.rhtml -->
-<div class="column prepend-3 span-18 last step">
-  <p><span>grid</span><span id="grid_status">&nbsp;|&nbsp;default&nbsp;</span></p>
-  <%= link_to_remote "Use Default Grid", :url => {:action => 'set_grid_default'} -%>&nbsp;|&nbsp;
-  <%= link_to_remote "Customize Grid", :url => {:action => 'set_grid_custom'} -%>&nbsp;|&nbsp;
-  <%= link_to_remote "Remove Grid", :url => {:action => 'set_grid_remove'} %>
+<!-- _step_grid.rhtml -->
+<div class="column span-24">
+  <h3>GRID STRUCTURE | <span id="grid_status" class="status-flag">default</span></h3>
 </div>
 
-<div class="column prepend-3 span-18 last">
-  <p>The grid is the heart of Blueprint CSS.  The grid provides you with a convenient way of positioning elements in columns while maintaining the typographic vertical rhythm of the page.  The default grid is <%= CssGrid.page_width %>px wide, with <%= CssGrid.number_of_columns %> columns that are each <%= CssGrid.column_width %>px wide and have a right margin of <%= CssGrid.margin_width %>px.
+<div class="column span-12 prepend-1">
+  <p>The grid is the heart of Blueprint CSS, and provides you with a convenient way of positioning elements in columns while maintaining the typographic vertical rhythm of the page.  The default grid is <strong><%= CssGrid.page_width %></strong>px wide, with <strong><%= CssGrid.number_of_columns %></strong> columns that are each <strong><%= CssGrid.column_width %></strong>px wide and have a right margin of <strong><%= CssGrid.margin_width %></strong>px.</p>
 </div>
-
-<div id="step_grid" class="column prepend-3 span-18 last" style="display: none;">
-  <div class="box">
-    <%= render :partial => 'step_grid_form' %>
-  </div>
+<div class="column span-8 push-0 last">
+  <h4 id="grid_actions">
+      <%= link_to_remote "CUSTOMIZE", :url => {:action => 'set_grid_custom'} -%>
+      &nbsp; | &nbsp;<%= link_to_remote "REMOVE", :url => {:action => 'set_grid_remove'} %>
+      <!-- &nbsp; | &nbsp;<%= link_to_remote "DEFAULT", :url => {:action => 'set_grid_default'} -%> -->
+  </h4>
 </div>
+<%= render :partial => 'step_grid_form' %>
 <!-- /_step_grid.rhtml -->

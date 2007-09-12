@@ -1,27 +1,55 @@
-  <% form_tag nil, :id => 'step_grid_form' do -%>
-    <fieldset>
-      <legend>Grid Properties</legend>
-      
-      <label>Number of columns</label><br />
-      <%= text_field_tag :number_of_columns, nil, :size=>3, :maxlength=>3, :value=>"#{CssGrid.number_of_columns}" %><br />
-      
-      <label>Column width</label><br />
-      <%= text_field_tag :column_width, nil, :size=>3, :maxlength=>3, :value=>"#{CssGrid.column_width}" %><br />
-      
-      <label>Margin width</label><br />
-      <%= text_field_tag :margin_width, nil, :size=>3, :maxlength=>3, :value=>"#{CssGrid.margin_width}" %><br />
-      
-      <label>Page width</label><br />
-      <span id="grid_page_width"><%= CssGrid.page_width %></span>
-      
-    </fieldset>
+<div id="step_grid" class="column prepend-1 span-23 last" style="/*display: none;*/">
   
-  <% end %>
+  <!-- <hr class="no"> -->
   
-  <%# 
-    note : there is a bug in observe_form.  If you don't pass 
-    :update => {} then it doesn't submit any 
-    params of the form its watching! 
-    See : http://wiki.rubyonrails.org/rails/pages/observe_form+-+Passing+Parameters
-  %>
-  <%= observe_form("step_grid_form", :frequency => '.5', :update => {}, :url => { :action => 'save_grid_custom_params' }) %>
+  <form name="step_grid_form" method="post" id="step_grid_form" action="/generator/">
+    
+    <div class="column span-6 append-1 border pad">
+      <p><label>Number of Columns:</label>
+        <br>
+        <input type="text" id="num_cols" name="generator[number_of_columns]" value="24" maxlength="3" onkeyup="fieldKeypress();" onblur="checkIntRange(this,2,999);" tabindex="1" class="txt" />
+        &nbsp;&nbsp;&nbsp;
+        <input type="button" value="-" id="btn_dec_columns" onclick="btnDecColumns();">
+        <input type="button" value="+" id="btn_inc_columns" onclick="btnIncColumns();">
+    
+        <span class="btn_fit"><input type="button" id="btn_fit_column_count" value="&laquo; Fit" onclick="btnFitColumnCount();"></span>
+        <br>
+      </p>
+    
+      <p><label>Column Width:</label>
+        <br>
+        <input type="text" id="column_width" name="generator[column_width]" value="30" maxlength="3" onkeyup="fieldKeypress();" onblur="checkIntRange(this,10,200);" tabindex="2" class="txt" /> px
+      
+        <span class="btn_fit"><input type="button" id="btn_fit_column_width" value="&laquo; Fit" onclick="btnFitColumnWidth();"></span>
+        <br>
+      </p>
+    </div>
+    <div class="column span-6 prepend-1 border pad">
+      <p><label>Margin Width:</label>
+        <br>
+        <input type="text" id="margin_width" name="generator[margin_width]" value="10" maxlength="2" onkeyup="fieldKeypress();" onblur="checkIntRange(this,5,99);" tabindex="3" class="txt" /> px
+      
+        <span class="btn_fit"><input type="button" id="btn_fit_margin_width" value="&laquo; Fit" onclick="btnFitMarginWidth();"></span>
+        <br>
+      </p>
+
+      <p><label>Desired Page Width:</label>
+        <br>
+        <input type="text" id="desired_page_width" name="generator[desired_page_width]" value="950" maxlength="4" onkeyup="fieldKeypress();" onblur="checkIntRange(this,200,1800);" tabindex="4" class="txt" /> px
+      </p>
+    </div>
+    <div class="column span-9 prepend-1 last">
+      <p><label>Total Page Width:</label>
+        <br>
+        <input type="hidden" name="total_page_width" id="total_page_width" value="" />
+        <span id="total_width_output">---</span>
+      </p>
+      
+      <h4 id="grid_save">
+        <%= link_to_remote "RESET", :url => {:action => 'goes_nowhere_is_only_temp_hack'} -%>&nbsp; | &nbsp;
+        <%= link_to_remote "SAVE SETTINGS", :url => {:action => 'set_grid_custom'} -%>
+        <span id="grid_busy" style=""><img src="/images/spinner.gif" width="16" height="16" alt="Spinner"></span>
+      </h4>
+    </div>
+  </form>
+</div>

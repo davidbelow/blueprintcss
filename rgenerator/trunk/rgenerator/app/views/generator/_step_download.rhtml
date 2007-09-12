@@ -1,35 +1,19 @@
-      <%# TODO: Downloads section is just a mess, really needs to be worked out %>
-      
-      <!-- _step_download -->
-      <div class="column prepend-3 span-18 last step">
-        <p><span>download</span></p>
-      </div>
-      
-      <div class="column prepend-3 span-18 last">
-        <p><span class="nb">Not entirely sure what the best way to present this section. Download alternatives are:</span></p>
-          <ol>
-            <li>.zip download of all files</li>
-            <ul>
-              <li>un-compressed version</li>
-              <li>compressed version</li>
-            </ul>
-            
-            <li>individual files for output (click on each file to download ?)</li>
-            <li>other method I can't think of right now</li>
-          </ol>
-      </div>      
-      
-      <div id="step-6" class="column prepend-3 span-18 last">
-        <div class="column span-18" style="background-color: #eef;">
-          
-          <div class="column span-9">
-            <p>Output options</p>
-          </div>
-          
-          <div class="column span-9 last">
-            <p>Output options</p>
-          </div>
-          
-        </div>
-      </div>
-      <!-- /_step_download -->
+<%# TODO: Downloads section is just a mess, really needs to be worked out %>
+
+<!-- _step_download -->
+<div class="column span-24">
+  <h3>DOWNLOAD OPTIONS | <span id="download_status" class="status-flag">compressed (single)</span></h3>
+</div>
+
+<div class="column span-12 prepend-1">
+  <p>Choose the type of download you want to initiate the download request. Files will be downloaded in a <strong>.zip</strong> archive.</p>
+</div>
+
+<div class="column span-8 push-0 last">
+  <h4 id="grid_actions">
+      <%= link_to_remote "CUSTOMIZE", :url => {:action => 'set_grid_custom'} -%>
+      &nbsp; | &nbsp;<%= link_to_remote "REMOVE", :url => {:action => 'set_grid_remove'} %>
+      <!-- &nbsp; | &nbsp;<%= link_to_remote "DEFAULT", :url => {:action => 'set_grid_default'} -%> -->
+  </h4>
+</div>
+<!-- /_step_download -->

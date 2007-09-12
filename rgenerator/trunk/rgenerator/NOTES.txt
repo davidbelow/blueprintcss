@@ -16,3 +16,8 @@ not just the generator bit:
 -- /blog/  ??
 
 
+<ul id="grid_actions">
+  <li><%= link_to_remote "CUSTOMIZE", :url => {:action => 'set_grid_custom'} -%></li>
+  <li><%= link_to_remote "REMOVE", :url => {:action => 'set_grid_remove'} %></li>
+  <li><%= link_to_remote "DEFAULT", :url => {:action => 'set_grid_default'} -%></li>
+</ul>
