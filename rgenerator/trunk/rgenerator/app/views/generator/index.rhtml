@@ -1,13 +1,8 @@
 <%= render :partial => "intro" %>
 
-<div class="column span-24">
-	<p class="al-r mylink"><a href="#" onclick="toggleAllSteps(this);return false;">SHOW ALL OPTIONS</a></p>
-</div>
-
-<hr />
-
 <%# %w{ grid typography grid_png plugins layouts download }.each_with_index do |part,key| %>
 <% %w{ grid download }.each_with_index do |part,key| %>
-	<%= render :partial => "step_#{part}",:locals => { :step => key+1 } %>
-	<hr />
+  <div id="<%= part %>">
+    <%= render :partial => "step_#{part}" %>
+  </div>
 <% end %>

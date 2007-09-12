@@ -1,80 +1,18 @@
-      <%# TODO: make the JS validations work, and AJAX download stuff. %>
-      <!-- step<%= step %> (grid.css) -->
-      <div class="column span-4 step">
-        <p>STEP<br><span><%= step %></span></p>
-      </div>
-      
-      <div class="column span-16 border">
-        <h2>GRID STRUCTURE:</h2>
-        <p>Short description of this section, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
-      </div>
-      
-      <div class="column span-4 last customize">
-        <p class="mylink"><a href="#" onclick="toggleStep('step-<%= step %>',this); return false;">CUSTOMIZE</a></p>
-      </div>
-      
-      <!-- div#step-1 -->
-      <div id="step-1" class="column span-24" style="display: none;">
-        
-        <form name="generator_grid" method="post" id="generator_grid" action="<%= CssGrid.form_action %>">
-          
-          <div class="column span-4">
-            <p>&nbsp;</p>
-          </div>
-          <div class="column span-6 append-1 border pad">
-            <p><label>Number of Columns:</label>
-              <br>
-              <input type="text" id="num_cols" name="generator[number_of_columns]" value="<%= CssGrid.number_of_columns %>" maxlength="3" onkeyup="fieldKeypress();" onblur="checkIntRange(this,2,999);" tabindex="1" class="txt" />
-              &nbsp;&nbsp;&nbsp;
-              <input type="button" value="-" id="btn_dec_columns" onclick="btnDecColumns();">
-              <input type="button" value="+" id="btn_inc_columns" onclick="btnIncColumns();">
-            
-              <span class="btn_fit"><input type="button" id="btn_fit_column_count" value="&laquo; Fit" onclick="btnFitColumnCount();"></span>
-              <br>
-            </p>
-            
-            <p><label>Column Width:</label>
-              <br>
-              <input type="text" id="column_width" name="generator[column_width]" value="<%= CssGrid.column_width %>" maxlength="3" onkeyup="fieldKeypress();" onblur="checkIntRange(this,10,200);" tabindex="2" class="txt" /> px
-              
-              <span class="btn_fit"><input type="button" id="btn_fit_column_width" value="&laquo; Fit" onclick="btnFitColumnWidth();"></span>
-              <br>
-            </p>
-            
-            <p><label>Margin Width:</label>
-              <br>
-              <input type="text" id="margin_width" name="generator[margin_width]" value="<%= CssGrid.margin_width %>" maxlength="2" onkeyup="fieldKeypress();" onblur="checkIntRange(this,5,99);" tabindex="3" class="txt" /> px
-              
-              <span class="btn_fit"><input type="button" id="btn_fit_margin_width" value="&laquo; Fit" onclick="btnFitMarginWidth();"></span>
-              <br>
-            </p>
-          </div>
-          <div class="column span-8 prepend-1 border pad">
-            <p><label>Desired Page Width:</label>
-              <br>
-              <input type="text" id="desired_page_width" name="generator[desired_page_width]" value="<%= CssGrid.page_width %>" maxlength="4" onkeyup="fieldKeypress();" onblur="checkIntRange(this,200,1800);" tabindex="4" class="txt" /> px
-            </p>
-            
-            <p><label>Total Page Width:</label>
-              <br>
-              <input type="hidden" name="total_page_width" id="total_page_width" value="" />
-              <span id="total_width_output">---</span>
-            </p>
-            
-            <hr>
-            <p>
-              <input type="button" value="Reset" onclick="btnResetForm();">
-              <!-- <span class="btn_fit"><input type="submit" id="submit" name="submit" value="Generate CSS" disabled="true" tabindex="5"></span> -->
-            </p>
-          </div>
-          <div class="column span-4 last dl-only">
-            <p><a href="#" onclick="">DOWNLOAD THIS FILE ONLY<br>&#x2193;</a>
-              <br>
-              <span id="grid_busy" style=""><img src="/images/spinner.gif" width="16" height="16" alt="Spinner"></span>
-            </p>
-          </div>
-        </form>
-      
-      </div>
-      <!-- /div#step<%= step %> -->
-      <!-- /step<%= step %> (grid.css) -->
+<!-- /_step_grid.rhtml -->
+<div class="column prepend-3 span-18 last step">
+  <p><span>grid</span><span id="grid_status">&nbsp;|&nbsp;default&nbsp;</span></p>
+  <%= link_to_remote "Use Default Grid", :url => {:action => 'set_grid_default'} -%>&nbsp;|&nbsp;
+  <%= link_to_remote "Customize Grid", :url => {:action => 'set_grid_custom'} -%>&nbsp;|&nbsp;
+  <%= link_to_remote "Remove Grid", :url => {:action => 'set_grid_remove'} %>
+</div>
+
+<div class="column prepend-3 span-18 last">
+  <p>The grid is the heart of Blueprint CSS.  The grid provides you with a convenient way of positioning elements in columns while maintaining the typographic vertical rhythm of the page.  The default grid is <%= CssGrid.page_width %>px wide, with <%= CssGrid.number_of_columns %> columns that are each <%= CssGrid.column_width %>px wide and have a right margin of <%= CssGrid.margin_width %>px.
+</div>
+
+<div id="step_grid" class="column prepend-3 span-18 last" style="display: none;">
+  <div class="box">
+    <%= render :partial => 'step_grid_form' %>
+  </div>
+</div>
+<!-- /_step_grid.rhtml -->

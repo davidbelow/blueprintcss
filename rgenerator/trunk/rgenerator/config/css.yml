@@ -30,7 +30,7 @@ common: &common
   foo: "bar"
   
   # the version of the generator
-  version_str: "v.05 (beta)"
+  version_str: "v.06 (beta)"
   
 reset:
   <<: *common

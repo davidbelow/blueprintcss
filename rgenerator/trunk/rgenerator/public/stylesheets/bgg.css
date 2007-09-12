@@ -1,39 +1,21 @@
-/*.container { background: #fff url("blueprint/lib/img/baseline.png"); }*/
 
-/* Blueprint v0.4 => v0.5*/
 
-/* Use a .box to create a padded box inside a column. 
-   Sticking to the the baseline. */ 
-/*
-.box { 
-  padding: 1.5em; 
-  margin-bottom: 1.5em; 
-  background: #f0f0f0; 
-}
-*/
-/* Clearing floats without extra markup
-   Based on How To Clear Floats Without Structural Markup by PiE
-   [http://www.positioniseverything.net/easyclearing.html] */
+/* WARNING : This file is no longer referenced by the application layout
+  and will be removed.  Leaving it here temporarily so we can cut things out
+  of here and paste them into application.css.  Trying to make sure we only
+  have what we absolutely need in application.css.  We should try to add
+  as little as humanely possible so we are sticking close to what BP
+  offers out of the box.  That way we are our own best advertisement!
+  */
 
-/*
-.clear { display: inline-block; }
-.clear:after, .container:after {
-    content: "."; 
-    display: block; 
-    height: 0; 
-    clear: both; 
-    visibility: hidden;
-}
-* html .clear { height: 1%; }
-.clear { display: block; }
-*/
-/* Forms
--------------------------------------------------------------- */
 
-label     { font-weight: bold; }
-textarea  { height: 216px; width: 300px; }
 
-/* END Blueprint v0.4 => v0.5 */
+
+
+
+
+
+
 
 
 /* quick hack code below */
@@ -122,11 +104,10 @@ span#total_width_output span{
   color: #ccc;
 }
 .step p span {
-  font-size: 750%;
+  font-size: 150%;
   font-weight: bold;
   line-height: 50%;
-  color: #eee;
-  padding: 0 20px;
+  color: #c0c0c0;
 /*  margin: 0;*/
 }
 .customize {

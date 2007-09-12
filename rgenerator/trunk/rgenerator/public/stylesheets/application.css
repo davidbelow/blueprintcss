@@ -1,0 +1,19 @@
+/* application.css */
+
+/* 
+We should try to stick as closely as possible to the core files 
+and only override when absolutely necessary.  This will allow us to
+also use this application as a real world testbed for Blueprint CSS
+*/
+
+
+p.version{
+  text-align: right;
+}
+
+.step p span {
+  font-size: 150%;
+  font-weight: bold;
+  line-height: 50%;
+  color: #c0c0c0;
+}
