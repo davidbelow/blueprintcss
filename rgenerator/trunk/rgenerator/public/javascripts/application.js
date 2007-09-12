@@ -2,11 +2,11 @@
 // This file is automatically included by javascript_include_tag :defaults
 
 // TODO: Temporarily stored here. Should reall
-function toggleStep(step,link){
+function toggleCustomize(step,link){
   new Effect.toggle($(step),'slide');
   // change the name of the link
   var showTxt = "CUSTOMIZE";
-  var closeTxt = showTxt + "<br>&uarr;"
+  var closeTxt = "CANCEL"
   link.update( (link.innerHTML == showTxt) ? closeTxt : showTxt );
 };
 function toggleAllSteps(link){
@@ -19,3 +19,12 @@ function toggleAllSteps(link){
   link.update( (link.innerHTML == showTxt) ? "HIDE ALL OPTIONS" : showTxt );
 };
 
+function btnResetGridForm(){
+  // TODO: sort out this reset functionality in a DRY way.
+  var g = default_settings['grid'];
+  $('grid_number_of_columns').value = g['number_of_columns'];
+  $('grid_column_width').value = g['column_width'];
+  $('grid_margin_width').value = g['margin_width'];
+  $('grid_page_width').value = g['desired_page_width'];
+  
+}

@@ -16,8 +16,14 @@ not just the generator bit:
 -- /blog/  ??
 
 
-<ul id="grid_actions">
-  <li><%= link_to_remote "CUSTOMIZE", :url => {:action => 'set_grid_custom'} -%></li>
-  <li><%= link_to_remote "REMOVE", :url => {:action => 'set_grid_remove'} %></li>
-  <li><%= link_to_remote "DEFAULT", :url => {:action => 'set_grid_default'} -%></li>
-</ul>
+2007-09-12:  [kematzy]
+
+More processing should take place on the client side via some JS stuff, so I've added the new LiveValidation
+[ http://www.livevalidation.com/ ] to the repository, and will be making use of that for validation client side.
+Just have to work out some JS loading issues and then begin writing the implementation for it.
+
+Also, PLEASE, PLEASE do NOT start removing design elements! Create alternative files with your design ideas
+if you need to, so that we can switch between versions quickly and easily.
+
+Example:  
+  Instead of editing _step_grid.rhtml, just create a temporary _step_grid2.rhtml with your design in it.

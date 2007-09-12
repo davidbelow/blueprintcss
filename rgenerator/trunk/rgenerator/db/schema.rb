@@ -5,8 +5,8 @@
 ActiveRecord::Schema.define(:version => 1) do
 
   create_table "sessions", :force => true do |t|
-    t.column "session_id", :string
-    t.column "data",       :text
+    t.column "session_id", :string,   :default => "NULL"
+    t.column "data",       :text,     :default => "NULL"
     t.column "updated_at", :datetime
   end
 
