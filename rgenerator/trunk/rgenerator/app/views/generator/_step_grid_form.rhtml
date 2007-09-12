@@ -1,10 +1,19 @@
   <% form_tag nil, :id => 'step_grid_form' do -%>
     <fieldset>
       <legend>Grid Properties</legend>
-      Number of columns : <%= text_field_tag :number_of_columns, nil, :size=>3, :maxlength=>3, :value=>"#{CssGrid.number_of_columns}" %><br />
-      Column width : <%= text_field_tag :column_width, nil, :size=>3, :maxlength=>3, :value=>"#{CssGrid.column_width}" %><br />
-      Margin width : <%= text_field_tag :margin_width, nil, :size=>3, :maxlength=>3, :value=>"#{CssGrid.margin_width}" %><br />
-      Page width : <span id="grid_page_width"><%= CssGrid.page_width %></span>
+      
+      <label>Number of columns</label><br />
+      <%= text_field_tag :number_of_columns, nil, :size=>3, :maxlength=>3, :value=>"#{CssGrid.number_of_columns}" %><br />
+      
+      <label>Column width</label><br />
+      <%= text_field_tag :column_width, nil, :size=>3, :maxlength=>3, :value=>"#{CssGrid.column_width}" %><br />
+      
+      <label>Margin width</label><br />
+      <%= text_field_tag :margin_width, nil, :size=>3, :maxlength=>3, :value=>"#{CssGrid.margin_width}" %><br />
+      
+      <label>Page width</label><br />
+      <span id="grid_page_width"><%= CssGrid.page_width %></span>
+      
     </fieldset>
   
   <% end %>
@@ -15,4 +24,4 @@
     params of the form its watching! 
     See : http://wiki.rubyonrails.org/rails/pages/observe_form+-+Passing+Parameters
   %>
-  <%= observe_form("step_grid_form", :frequency => '2', :update => {}, :url => { :action => 'save_grid_custom_params' }) %>
+  <%= observe_form("step_grid_form", :frequency => '.5', :update => {}, :url => { :action => 'save_grid_custom_params' }) %>
