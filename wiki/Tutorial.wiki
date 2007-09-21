@@ -6,7 +6,8 @@ Blueprint should be put in your site's CSS directory. After you've done that, ad
 
 {{{
 <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">
+<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
+<!--[if IE]><link rel="stylesheet" href="css/blueprint/lib/ie.css" type="text/css" media="screen, projection"><![endif]-->
 }}}
 
 BP is now ready for consumption.
@@ -28,7 +29,7 @@ The framework has a few files you should sift through. Most files are heavily co
 There are some images as well, that you can use as backgrounds to see the grid and/or baseline. See screen.css for details
 
 ===Using Blueprint===
-The best way to see how BP is used, is to go through the commented CSS files, or the source code for [http://bjorkoy.com/blueprint/test.html this example] page. However, here are some of the basics:
+The best way to see how BP is used, is to go through the commented CSS files, or the source code for the example page, which is bundled with the download. However, here are some of the basics:
 
 ===The typography===
 Typography.css does not need any customization: just drop it in, and it'll give you some nice default text styles.
@@ -43,7 +44,7 @@ By default, the grid is 950px wide, with 24 columns spanning 30px, and a 10px ma
 If you need fewer or more columns, use this formula to find the new total width:
 
 {{{
-Total width = (columns * 30) - 10
+Total width = (columns * 40) - 10
 }}}
 
 The first thing you do, is surround your grid with a container:
@@ -87,7 +88,7 @@ You can also nest columns any way you want. Check out this file and this file fo
 	</div>
 	
 	<div class="column span-16">
-		<div class="column span-8 first">
+		<div class="column span-8">
 			Box1
 		</div>
 		<div class="column span-4">
