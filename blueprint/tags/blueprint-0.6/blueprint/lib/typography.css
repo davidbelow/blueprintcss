@@ -15,7 +15,7 @@
   
 -------------------------------------------------------------- */
 
-/* This is where you set your desired font size. The line-heights 
+/* This is where you set your desired font size. The line-height 
    and vertical margins are automatically calculated from this. 
    The percentage is of 16px (0.75 * 16px = 12px). */
    
@@ -59,17 +59,18 @@ p img       { float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
 p img.top   { margin-top: 0; } /* Use this if the image is at the top of the <p>. */
 img         { margin: 0 0 1.5em; }
 
-ul, ol      { margin:0 1.5em 1.5em 1.5em; }
-ul          { list-style-type: circle; }
-ol          { list-style-type: decimal; }
-dl          { margin: 0 0 1.5em 0; }
-dl dt       { font-weight: bold; }
-dd          { margin-left: 1.5em;}
+ul, ol        { margin-bottom:1.5em; list-style-position: inside; }
+ul            { list-style-type: circle; }
+ol            { list-style-type: decimal; }
+ul ol, ol ul, 
+ul ul, ol ol  { margin-left: 1.5em;}
+dl            { margin: 1.5em 0; }
+dl dt         { font-weight: bold; }
+dd            { margin-left: 1.5em;}
 
 abbr, 
 acronym     { border-bottom: 1px dotted #666; }
 address     { margin-top: 1.5em; font-style: italic; }
-del         { color:#666; }
 
 a:focus, 
 a:hover     { color: #000; }
@@ -77,14 +78,14 @@ a           { color: #009; text-decoration: underline; }
 
 blockquote  { margin: 1.5em; color: #666; font-style: italic; }
 strong      { font-weight: bold; }
-em,dfn      { font-style: italic; background: #ffc; }
-dfn         { font-weight: bold; }
-pre,code    { margin: 1.5em 0; white-space: pre; }
+em,dfn      { font-style: italic; }
+dfn         { font-weight: 700; }
+pre,code    { margin: 1.5em 0; white-space:pre; }
 pre,code,tt { font: 1em 'andale mono', 'monotype.com', 'lucida console', monospace; line-height: 1.5; } 
-tt          { display: block; margin: 1.5em 0; line-height: 1.5; }
+tt          { display: block; margin:1.5em 0; line-height:1.5; }
 
 
-/* Tables
+/* Tables (needs improvement)
 -------------------------------------------------------------- */
 
 table   { margin-bottom: 1.4em; }
@@ -92,25 +93,15 @@ th      { border-bottom: 2px solid #ccc; font-weight: bold; }
 td      { border-bottom: 1px solid #ddd; }
 th,td   { padding: 4px 10px 4px 0; }
 tfoot   { font-style: italic; }
-caption { background: #ffc; }
 
-/* Use this if you use span-x classes on th/td. */
+/* Use this if you use a span-x class on th, td. */
 table .last { padding-right: 0; } 
 
 
 /* Some default classes
 -------------------------------------------------------------- */
 
-.small      { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
-.large      { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
-.quiet      { color: #666; }
-
-.hide       { display: none; }
-.highlight  { background:#ff0; }
-.added      { color:#060; }
-.removed    { color:#900; }
-
-.top        { margin-top:0; padding-top:0; }
-.bottom     { margin-bottom:0; padding-bottom:0; }
-
-
+.small  { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
+.large  { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
+.quiet  { color: #666; }
+.hide   { display: none; }

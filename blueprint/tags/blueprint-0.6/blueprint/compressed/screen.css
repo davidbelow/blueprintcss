@@ -96,7 +96,8 @@ margin-top:0;
 }
 
 ul,ol {
-margin:0 1.5em 1.5em;
+margin-bottom:1.5em;
+list-style-position:inside;
 }
 
 ul {
@@ -107,8 +108,8 @@ ol {
 list-style-type:decimal;
 }
 
-dd {
-margin-left:1.5em;
+dl {
+margin:1.5em 0;
 }
 
 abbr,acronym {
@@ -133,11 +134,6 @@ blockquote {
 color:#666;
 font-style:italic;
 margin:1.5em;
-}
-
-em,dfn {
-font-style:italic;
-background:#ffc;
 }
 
 pre,code {
@@ -169,14 +165,6 @@ th,td {
 padding:4px 10px 4px 0;
 }
 
-tfoot {
-font-style:italic;
-}
-
-caption {
-background:#ffc;
-}
-
 table .last {
 padding-right:0;
 }
@@ -193,30 +181,12 @@ line-height:2.5em;
 margin-bottom:1.25em;
 }
 
+.quiet {
+color:#666;
+}
+
 .hide {
 display:none;
-}
-
-.highlight {
-background:#ff0;
-}
-
-.added {
-color:#060;
-}
-
-.removed {
-color:#900;
-}
-
-.top {
-margin-top:0;
-padding-top:0;
-}
-
-.bottom {
-margin-bottom:0;
-padding-bottom:0;
 }
 
 .container {
@@ -517,13 +487,13 @@ padding-left:920px;
 .border {
 padding-right:4px;
 margin-right:5px;
-border-right:1px solid #eee;
+border-right:1px solid #ddd;
 }
 
 .colborder {
 padding-right:24px;
 margin-right:25px;
-border-right:1px solid #eee;
+border-right:1px solid #ddd;
 }
 
 .pull-1 {
@@ -605,41 +575,18 @@ height:1%;
 }
 
 fieldset {
-border:1px solid #ccc;
-margin:0 0 1.5em;
+border:1px solid #ddd;
+margin:1.5em 0;
 padding:1.4em;
 }
 
-legend {
-font-weight:700;
-font-size:1.2em;
-}
-
-input.text,input.title {
-width:300px;
-border:1px solid #bbb;
-background:#f6f6f6;
-margin:.5em .5em .5em 0;
-padding:5px;
-}
-
-input.title {
-font-size:1.5em;
+input.text {
+width:250px;
 }
 
 textarea {
-width:400px;
+width:350px;
 height:250px;
-border:1px solid #bbb;
-background:#eee;
-margin:.5em .5em .5em 0;
-padding:5px;
-}
-
-select {
-border:1px solid #ccc;
-background:#f6f6f6;
-width:200px;
 }
 
 .error,.notice,.success {
@@ -678,19 +625,18 @@ color:#817134;
 color:#529214;
 }
 
-p,img,dl {
+p,img {
 margin:0 0 1.5em;
 }
 
-dl dt,strong,dfn,label {
+ul ol,ol ul,ul ul,ol ol,dd {
+margin-left:1.5em;
+}
+
+dl dt,strong,dfn,legend,label {
 font-weight:700;
 }
 
-del,.quiet {
-color:#666;
-}
-
-input.text:focus,input.title:focus,textarea:focus,select:focus {
-background:#fff;
-border:1px solid #999;
+em,dfn,tfoot {
+font-style:italic;
 }
