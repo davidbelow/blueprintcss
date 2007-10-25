@@ -1,6 +1,8 @@
 #summary Here's a quick tutorial on how you start using Blueprint.
 #labels Featured,Phase-Deploy
 
+In addition to the tutorial below, this [http://www.blueflavor.com/blog/design/blueprintcss_101.php tutorial by Blueflavor] gives you a good intro to Blueprint.
+
 ===Installation===
 Blueprint should be put in your site's CSS directory. After you've done that, add these two lines to the <head> of your pages. Remember to make sure the href path is correct:
 
