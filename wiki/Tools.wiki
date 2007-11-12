@@ -14,6 +14,7 @@ This page is for posting and keeping track of all the CSS development tools base
 
 == Code tools ==
 
+  * [http://www.digitart.net/blueprintcss/bluebrintcss.pdf Cheat Sheet]
   * [http://trac.ariejan.net/wiki/Blueprint Blueprint Rails Plugin]
 
 == Processing tools ==
