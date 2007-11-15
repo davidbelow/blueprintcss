@@ -10,7 +10,7 @@ This page is for posting and keeping track of all the CSS development tools base
 == Design tools ==
 
   * [http://kematzy.com/blueprint-generator/ Blueprint Grid CSS Generator]
-  * [http://www.ajaxbestiary.com/Labs/LayoutTool/index.htm Blueprint Layout Builder]
+  * [http://www.ajaxbestiary.com/Labs/BLT2/index.htm Blueprint Layout Builder]
   * [http://www.parkerfox.co.uk/tmp/canvas-grid.html JS + Canvas Grid Generator]
 
 == Code tools ==
