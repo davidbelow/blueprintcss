@@ -6,7 +6,6 @@ By Ran Yaniv Hartstein, ranh.co.il
 Usage
 ----------------------------------------------------------------
 
-1) Add this line to your HTML:
-   <link rel="stylesheet" href="css/blueprint/plugins/rtl/rtl.css" 
-	  type="text/css" media="screen, projection">	
+1) Add this plugin to lib/settings.yml.
+   See compress.rb for instructions.
 	 
