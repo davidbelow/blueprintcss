@@ -43,7 +43,9 @@ Print.css has some options where you can fill in your domain name, so that relat
 ====The grid====
 By default, the grid is 950px wide, with 24 columns spanning 30px, and a 10px margin between columns.
 
-If you need fewer or more columns, use this formula to find the new total width:
+If you need fewer or more columns, use the compressor found in lib/compress.rb This file has many options, which are explained in the comments in that file
+
+If you prefer to do this manually, use the following formula to find the new total width:
 
 {{{
 Total width = (columns * 40) - 10
@@ -57,20 +59,20 @@ The first thing you do, is surround your grid with a container:
 </div>
 }}}
 
-You then use div's with the class "column" and additional classes to tell how that column should look. Here are some examples:
+You then use div's with one of the .span-x classes to set how many columns the elements should span. Here are some examples:
 
 {{{
 <div class="container">
-	<div class="column span-24">
+	<div class="span-24">
 		Header
 	</div>
-	<div class="column span-4">
+	<div class="span-4">
 		Left sidebar
 	</div>
-	<div class="column span-16">
+	<div class="span-16">
 		Main content
 	</div>
-	<div class="column span-4 last">
+	<div class="span-4 last">
 		Right sidebar
 	</div>	
 </div>
@@ -82,32 +84,32 @@ You can also nest columns any way you want. Check out this file and this file fo
 
 {{{
 <div class="container">
-	<div class="column span-24">
+	<div class="span-24">
 		Header
 	</div>
-	<div class="column span-4">
+	<div class="span-4">
 		Left sidebar
 	</div>
 	
-	<div class="column span-16">
-		<div class="column span-8">
+	<div class="span-16">
+		<div class="span-8">
 			Box1
 		</div>
-		<div class="column span-4">
+		<div class="span-4">
 			Box2
 		</div>
-		<div class="column span-4 last">
+		<div class="span-4 last">
 			Box3
 		</div>
-		<div class="column span-16 first last">
+		<div class="span-16 last">
 			Main content
 		</div>
 	</div>
 	
-	<div class="column span-4 last">
+	<div class="span-4 last">
 		Right sidebar
 	</div>
-	<div class="column span-24">
+	<div class="span-24">
 		Footer
 	</div>
 </div>
@@ -115,4 +117,4 @@ You can also nest columns any way you want. Check out this file and this file fo
 
 Again, this is pretty simple when you get the hang of it. Just remember the "last" class, and you should be fine.
 
-Grid.css can do a lot more than this, however. You can prepend and append empty columns, pull or push images across columns, add borders between columns, and use multiple containers to create almost any layout. Check out the comments in grid.css and the example pages for more information
+Grid.css can do a lot more than this, however. You can prepend and append empty columns, pull or push images across columns, add borders between columns, and use multiple containers to create almost any layout. Check out the comments in grid.css and the example pages for more information.
