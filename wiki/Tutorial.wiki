@@ -9,7 +9,7 @@ Blueprint should be put in your site's CSS directory. After you've done that, ad
 {{{
 <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if IE]><link rel="stylesheet" href="css/blueprint/lib/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<!--[if IE]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
 }}}
 
 BP is now ready for consumption.
@@ -20,15 +20,38 @@ The framework has a few files you should sift through. Most files are heavily co
   * *screen.css*: This is the main file of the framework. It imports other CSS files from the "lib" directory, and should be included on every page.
   * *print.css*: This file sets some default print rules, so that printed versions of your site looks better than they usually would.
 
-  * *lib/grid.css*: This file sets up the grid (it's true). It has a lot of classes you apply to divs to set up any sort of column-based grid. 
-  * *lib/typography.css*: This file sets some default typography. It also has a few methods for some really fancy stuff to do with your text, so be sure to check it out.
-  * *lib/reset.css*: This file resets every default CSS value that browsers tend to set for you.
-  * *lib/buttons.css*: A bundled package for creating great CSS/HTML buttons.
-  * *lib/compressed.css*: A compressed version, containing all of the lib/ files. Should be used on live projects. See screen.css for instructions.
+  * *src/grid.css*: This file sets up the grid (it's true). It has a lot of classes you apply to divs to set up any sort of column-based grid. 
+  * *src/typography.css*: This file sets some default typography. It also has a few methods for some really fancy stuff to do with your text, so be sure to check it out.
+  * *src/reset.css*: This file resets every default CSS value that browsers tend to set for you.
+  * *src/forms.css*: This file resets every default CSS value that browsers tend to set for you.
 
 
+The framework has a few files you should check out. Every file in the 'src' directory contains lots of (hopefully) clarifying comments.
 
-There are some images as well, that you can use as backgrounds to see the grid and/or baseline. See screen.css for details
+*Compressed files (these go in the HTML):*
+
+* blueprint/screen.css
+* blueprint/print.css
+* blueprint/ie.css
+
+*Source files:*
+
+* *blueprint/src/reset.css*: This file resets CSS values that browsers tend to set for you.
+* *blueprint/src/grid.css*: This file sets up the grid (it's true). It has a lot of classes you apply to divs to set up any sort of column-based grid.
+* *blueprint/src/typography.css*: This file sets some default typography. It also has a few methods for some really fancy stuff to do with your text.
+* *blueprint/src/forms.css*: Includes some minimal styling of forms.
+* *blueprint/src/print.css*: This file sets some default print rules, so that printed versions of your site looks better than they usually would. It should be included on every page.
+* *blueprint/src/ie.css*: Includes every hack for our beloved IE6 and 7.
+
+*Scripts:*
+
+* *lib/compress.rb*: A Ruby script for compressing and customizing your CSS. Set a custom namespace, column count, widths, output paths, multiple projects, and semantic class names. See commenting in compress.rb or run $ruby compress.rb -h for more information.
+* *lib/validate.rb*: Validates the Blueprint core files with the W3C CSS validator.
+
+*Other:*
+
+* *blueprint/plugins/*: Contains additional functionality in the form of simple plugins for Blueprint. See individual readme files in the directory of each plugin for further instructions.
+* *tests/*: Contains html files which tests most aspects of Blueprint. Open tests/index.html for further instructions.
 
 ===Using Blueprint===
 The best way to see how BP is used, is to go through the commented CSS files, or the source code for the example page, which is bundled with the download. However, here are some of the basics:
