@@ -1,5 +1,4 @@
 #summary People who have helped out on BP.
-#labels Featured
 
 ===Project owner===
   * [http://bjorkoy.com Olav Bjørkøy]
