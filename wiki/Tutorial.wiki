@@ -1,4 +1,3 @@
 #summary Here's a quick tutorial on how you start using Blueprint.
-#labels Featured,Phase-Deploy
 
 Blueprint has moved, go to: [http://blueprintcss.org BlueprintCSS.org]
