@@ -1,0 +1,1 @@
+Blueprint has moved, go to: [BlueprintCSS.org](http://blueprintcss.org)
